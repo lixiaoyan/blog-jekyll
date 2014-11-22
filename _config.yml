@@ -1,3 +1,4 @@
+baseurl: "/blog"
 timezone: "Asia/Shanghai"
 permalink: "/post/:title.html"
 kramdown:
