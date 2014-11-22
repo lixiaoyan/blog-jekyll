@@ -111,6 +111,7 @@ article {
 }
 
 .read .more {
+  display: inline-block;
   padding: 0.4em 0.8em;
   border-bottom: none;
   color: #fff;
