@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="http://www.intptr.im/read.css/assets/normalize.css" />
+    <link rel="stylesheet" href="http://www.intptr.im/read.css/read.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <h1>IntPtr</h1>
+        <nav id="nav">
+          <ul>
+            <li><a href="{{ site.baseurl }}/links.html">Links</a></li>
+            <li><a href="{{ site.baseurl }}/about.html">About</a></li>
+            <li><a href="{{ site.baseurl }}/atom.xml">Feed</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container">
+      {{ content }}
+    </main>
+    <footer id="footer">
+      <p>Powered by Jekyll. &copy; 2014 IntPtr.</p>
+    </footer>
+  </body>
+</html>

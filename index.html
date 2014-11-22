@@ -1,0 +1,9 @@
+---
+layout: default
+title: "IntPtr's Blog"
+---
+
+{% for post in site.posts %}
+  {% capture url %}{{ site.baseurl }}{{ post.url }}{% endcapture %}
+  {% include post.html title=post.title date=post.date content=post.excerpt link=url more=url %}
+{% endfor %}

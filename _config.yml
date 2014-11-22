@@ -1,0 +1,25 @@
+timezone: "Asia/Shanghai"
+permalink: "/post/:title.html"
+kramdown:
+  input: GFM
+  smart_quotes: apos,apos,quot,quot
+  use_coderay: true
+  coderay:
+    coderay_bold_every: false
+gems:
+  - jekyll-sitemap
+  - jekyll-mentions
+  - jemoji
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
