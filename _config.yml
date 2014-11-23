@@ -4,9 +4,6 @@ permalink: "/post/:title.html"
 kramdown:
   input: GFM
   smart_quotes: apos,apos,quot,quot
-  use_coderay: true
-  coderay:
-    coderay_bold_every: false
 gems:
   - jekyll-sitemap
   - jekyll-mentions
