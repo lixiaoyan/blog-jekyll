@@ -1,5 +1,5 @@
 ---
-title: "Hello, World!"
+title: "Hello world!"
 ---
 
 > 欢迎使用 Jekyll。这是系统自动生成的演示文章。编辑或者删除它，然后开始您的博客！（才怪
