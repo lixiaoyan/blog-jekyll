@@ -1,0 +1,27 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="utf-8" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <link rel="alternate" href="{{ site.url }}/" />
+  <link rel="self" type="application/atom+xml" href="{{ site.url }}/atom.xml" />
+
+  <title>IntPtr's Blog</title>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>{{ site.url }}/</id>
+
+  <author>
+    <name>IntPtr</name>
+    <email>lxy.lixiaoyan@gmail.com</email>
+  </author>
+
+  {% for post in site.posts limit: 20 %}
+    <entry>
+      <link rel="alternate" href="{{ site.url }}{{ post.url }}" />
+      <title type="html">{{ post.title | xml_escape }}</title>
+      <id>{{ site.url }}{{ post.url }}</id>
+      <updated>{{ post.date | date_to_xmlschema }}</updated>
+      <content type="html">{{ post.content | xml_escape }}</content>
+    </entry>
+  {% endfor %}
+</feed>

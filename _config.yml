@@ -1,3 +1,4 @@
+url: "http://www.intptr.im/blog"
 baseurl: "/blog"
 timezone: "Asia/Shanghai"
 permalink: "/post/:title.html"
