@@ -3,6 +3,14 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  background-color: rgba(33,150,243,0.2);
+}
+
+::selection {
+  background-color: rgba(33,150,243,0.2);
+}
+
 body {
   margin: 0 1.2em;
 }
@@ -15,7 +23,6 @@ body {
 
 #header {
   margin: 0 -1.2em;
-  margin-bottom: 3.2em;
   padding-left: 1.2em;
   padding-right: 1.2em;
   padding-top: 9.6em;
@@ -78,11 +85,13 @@ body {
 }
 
 #main {
-  margin-top: 2.4em;
-  margin-bottom: 2.4em;
+  margin-top: 3.2em;
+  margin-bottom: 3.2em;
 }
 
 #footer {
+  margin: 0 -1.2em;
+  padding: 0 1.2em;
   text-align: center;
   border-top: 1px solid #ddd;
 }
@@ -94,8 +103,8 @@ body {
 }
 
 article {
-  margin-top: 2.4em;
-  margin-bottom: 2.4em;
+  margin-top: 3.2em;
+  margin-bottom: 3.2em;
 }
 
 .read a {
@@ -103,7 +112,7 @@ article {
 }
 
 .read header {
-  margin-bottom: 1.6em;
+  margin-bottom: 1.2em;
 }
 
 .read header p {
@@ -115,17 +124,12 @@ article {
   border-bottom: none;
 }
 
-.read .more {
-  display: inline-block;
-  padding: 0.2em 0.6em;
-  border-bottom: none;
-  color: #fff;
-  background-color: #7e57c2;
-  transition: background-color 200ms;
+.read .footnote {
+  margin: 0 0.2em;
 }
 
-.read .more:hover,
-.read .more:active,
-.read .more:focus {
-  background-color: #9575cd;
+.read .footnotes {
+  margin-top: 1.6em;
+  font-size: 0.9em;
+  border-top: 1px solid #e6e6e6;
 }
