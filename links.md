@@ -9,7 +9,7 @@ title: "Links"
 - [Joy Neop](http://www.joyneop.com/) (@JoyNeop)
 - [Whitebox](http://code5light.com/) (@sanddudu)
 - [Almsev](http://www.almsev.com/) (@Almsev)
-- [Addams Chen](http://addams96.me/)
+- [Addams Chen](http://addams96.me/) (@AddamsWeb)
 - [imbushuo](https://imbushuo.net/) (@imbushuo)
 - [Cry](http://infinnie.github.io/) (@infinnie)
 - [Phoenix](http://blog.phoenixlzx.com/) (@phoenixlzx)
