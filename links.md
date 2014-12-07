@@ -17,5 +17,6 @@ title: "Links"
 - [⑨chu](http://www.bakachu.cn/) (@9chu)
 - [次碳酸钴](http://www.web-tinker.com/) (@YanagiEiichi)
 - [愚人陈](http://www.yurenchen.com/)
+- [奶鱼](http://mxd.moe/)
 - [itianda](http://itianda.com/)
 - [甘泉](http://ganquan.info/)
