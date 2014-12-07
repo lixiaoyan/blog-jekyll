@@ -23,4 +23,4 @@ Object.prototype.__defineGetter__ = function() {
 #### 参考文章
 
 - [JavaScriptStackTraceApi - v8-wiki](https://code.google.com/p/v8-wiki/wiki/JavaScriptStackTraceApi)
-- [Google Chrome 开发者工具漏洞利用 | WooYun知识库](http://drops.wooyun.org/papers/974)
+- [Google Chrome 开发者工具漏洞利用 \| WooYun知识库](http://drops.wooyun.org/papers/974)
