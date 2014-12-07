@@ -20,6 +20,10 @@ Object.prototype.__defineGetter__ = function() {
 
 然后我们得到了 `InjectedScript` 这个对象。其实可以利用的不仅仅是这一个函数，比如 `Object.getOwnPropertyNames` 都是可以利用的。但是由于水平不足等原因，我没有继续分析下去，于是这篇博客暂时就写到这里了，That's all。
 
+* * *
+
+之后我又尝试了几次，也翻了一下某[源码](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/inspector/InjectedScriptSource.js)，似乎真的没什么可利用的东西了。唯一有点效果的大概也就一开始说的那个修改剪贴板了。果然 Chrome 上次被发现有漏洞之后对这些东西格外地用心了么……
+
 #### 参考文章
 
 - [JavaScriptStackTraceApi - v8-wiki](https://code.google.com/p/v8-wiki/wiki/JavaScriptStackTraceApi)
