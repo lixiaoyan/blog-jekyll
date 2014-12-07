@@ -18,7 +18,7 @@ Object.prototype.__defineGetter__ = function() {
 };
 ```
 
-然后我们得到了 `InjectedScript` 这个对象。其实可以利用的不光这一个函数，比如 `Object.getOwnPropertyNames` 都是可以利用的。但是由于水平不足等原因，我没有继续分析下去，于是这篇博客暂时就写到这里了，That's all。
+然后我们得到了 `InjectedScript` 这个对象。其实可以利用的不仅仅是这一个函数，比如 `Object.getOwnPropertyNames` 都是可以利用的。但是由于水平不足等原因，我没有继续分析下去，于是这篇博客暂时就写到这里了，That's all。
 
 #### 参考文章
 
