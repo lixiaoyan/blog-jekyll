@@ -10,7 +10,7 @@ title: "Web: ligatures & kerning"
 text-rendering: optimizeLegibility;
 ```
 
-上面这段样式可以开启浏览器对 ligatures (连字) 与 kerning 的支持，而且也算是比较常见的 <sup>[来源请求]</sup>。但是这个属性并不属于任何 CSS 标准，而是属于 SVG 规范的一部分。其实在 CSS 标准中，定义了其它属性来支持它。
+上面这段样式可以开启浏览器对 ligatures (连字) 与 kerning 的支持，而且也算是比较常见的 <sup>[来源请求]</sup>。但是这个属性并不属于任何 CSS 标准，而是属于 SVG 规范的一部分。其实在 CSS 标准中，定义了其它属性来支持它们。
 
 ``` css
 font-variant-ligatures: common-ligatures;
