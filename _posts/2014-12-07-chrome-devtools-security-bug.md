@@ -24,6 +24,8 @@ Object.prototype.__defineGetter__ = function() {
 
 之后我又尝试了几次，也翻了一下某[源码](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/inspector/InjectedScriptSource.js)，似乎真的没什么可利用的东西了。唯一有点效果的大概也就一开始说的那个修改剪贴板了。果然 Chrome 上次被发现有漏洞之后对这些东西格外地用心了么……
 
+* * *
+
 #### 参考文章
 
 - [JavaScriptStackTraceApi - v8-wiki](https://code.google.com/p/v8-wiki/wiki/JavaScriptStackTraceApi)
