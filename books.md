@@ -15,3 +15,4 @@ title: "Books"
 
 - JavaScript 高级程序设计
 - 高性能 JavaScript
+- 上帝掷骰子吗：量子物理史话
