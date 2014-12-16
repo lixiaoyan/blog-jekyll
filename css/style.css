@@ -133,3 +133,17 @@ article {
   font-size: 0.9em;
   border-top: 1px solid #e6e6e6;
 }
+
+@media (max-width: 520px) {
+  #header .container {
+    display: block;
+  }
+
+  #header h1 {
+    display: block;
+  }
+
+  #header nav {
+    display: block;
+  }
+}
