@@ -14,6 +14,8 @@ title: "Links"
 - [Cry](http://infinnie.github.io/) (@infinnie)
 - [Phoenix](http://blog.phoenixlzx.com/) (@phoenixlzx)
 - [谦谦](http://xqq.0ginr.com/) (@xqq)
+- [iBaka9](http://www.ibaka9.com/)
+- [夏橘子](http://ovo.so/)
 - [⑨chu](http://www.bakachu.cn/) (@9chu)
 - [次碳酸钴](http://www.web-tinker.com/) (@YanagiEiichi)
 - [愚人陈](http://www.yurenchen.com/)
