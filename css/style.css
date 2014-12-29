@@ -135,6 +135,10 @@ article {
 }
 
 @media (max-width: 520px) {
+  #header {
+    margin-top: 3.2em;
+  }
+
   #header .container {
     display: block;
   }
