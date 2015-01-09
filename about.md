@@ -2,15 +2,13 @@
 title: "About Me"
 ---
 
-I'm here.
-
 ### Contacts
 
 - E-mail: <lxy.lixiaoyan@gmail.com> / <i@intptr.im>
 - GitHub: @lixiaoyan
 - Google+: [+lixiaoyan](https://www.google.com/+lixiaoyan)
-- SegmentFault: [@intptr](http://segmentfault.com/u/intptr)
-- Bangumi: [@intptr](http://bgm.tv/user/intptr)
+- SegmentFault: [intptr](http://segmentfault.com/u/intptr)
+- Bangumi: [intptr](http://bgm.tv/user/intptr)
 
 ### Skills
 
