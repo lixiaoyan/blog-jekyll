@@ -15,5 +15,5 @@ title: "About Me"
 - JavaScript, Dart, CoffeeScript
 - Design, CSS, Less
 - Node.js, Gulp, Mocha
-- C#, Python
+- C#, Python, Qt
 - Linux, bash, git
