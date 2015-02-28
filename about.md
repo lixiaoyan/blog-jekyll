@@ -5,6 +5,7 @@ title: "About Me"
 ### Contacts
 
 - E-mail: <lxy.lixiaoyan@gmail.com> / <i@intptr.im>
+- Keybase: [intptr](https://keybase.io/intptr)
 - GitHub: @lixiaoyan
 - Google+: [+lixiaoyan](https://www.google.com/+lixiaoyan)
 - SegmentFault: [intptr](http://segmentfault.com/u/intptr)
