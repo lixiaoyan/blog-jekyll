@@ -8,9 +8,9 @@ Object.prototype.__defineGetter__ = function() {
 };
 ```
 
-也许你觉得上面的代码没什么特殊的，那么来看一下效果吧。用 Chrome 打开[这个]({{ site.baseurl }}/file/chrome-devtools-security-bug.html)页面，然后打开控制台，随便敲一些什么东西，然后再看一下你的剪贴板吧，是不是已经变成「Fuck you!」了？
+也许你觉得上面的代码没什么特殊的，那么来看一下效果吧。用 Chrome 打开 [这个]({{ site.baseurl }}/file/chrome-devtools-security-bug.html) 页面，然后打开控制台，随便敲一些什么东西，然后再看一下你的剪贴板吧，是不是已经变成「Fuck you!」了？
 
-但是这篇文章不仅仅止于此，我们还可以继续。之前我曾写过一篇[博客](http://segmentfault.com/blog/intptr/1190000000742286)来记录 v8 特有的某个 API。如果把两者用到一起呢？
+但是这篇文章不仅仅止于此，我们还可以继续。之前我曾写过一篇 [博客](http://segmentfault.com/blog/intptr/1190000000742286) 来记录 v8 特有的某个 API。如果把两者用到一起呢？
 
 ``` javascript
 Object.prototype.__defineGetter__ = function() {
@@ -22,7 +22,7 @@ Object.prototype.__defineGetter__ = function() {
 
 * * *
 
-之后我又尝试了几次，也翻了一下某[源码](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/inspector/InjectedScriptSource.js)，似乎真的没什么可利用的东西了。唯一有点效果的大概也就一开始说的那个修改剪贴板了。果然 Chrome 上次被发现有漏洞之后对这些东西格外地用心了么……
+之后我又尝试了几次，也翻了一下某 [源码](https://code.google.com/p/chromium/codesearch#chromium/src/third_party/WebKit/Source/core/inspector/InjectedScriptSource.js)，似乎真的没什么可利用的东西了。唯一有点效果的大概也就一开始说的那个修改剪贴板了。果然 Chrome 上次被发现有漏洞之后对这些东西格外地用心了么……
 
 * * *
 

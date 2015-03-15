@@ -17,13 +17,13 @@ font-variant-ligatures: common-ligatures;
 font-kerning: normal;
 ```
 
-就是这两个属性了。第一行的作用是启用 ligatures 支持，第二行是启用 kerning。但是这两个属性的兼容性很差，[第一个](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures#Browser_Compatibility)属性基本需要各个浏览器的最新版本才能支持，而[第二个](https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning#Browser_Compatibility)，甚至尚无浏览器支持。
+就是这两个属性了。第一行的作用是启用 ligatures 支持，第二行是启用 kerning。但是这两个属性的兼容性很差，[第一个](https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant-ligatures#Browser_Compatibility) 属性基本需要各个浏览器的最新版本才能支持，而 [第二个](https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning#Browser_Compatibility)，甚至尚无浏览器支持。
 
 ``` css
 font-feature-settings: "liga" on, "kern" on;
 ```
 
-继续翻下去，我们还能找到一个名叫 `font-feature-settings` 的属性，并且这个属性的[兼容性](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings#Browser_compatibility)要比上面两个要好一些。这是一个比较底层的属性，它允许我们直接控制 OpenType 的各种高级特性。上面代码中的 `"liga"` 指的是「Standard Ligatures」，`"kern"` 指的是「Kerning」。
+继续翻下去，我们还能找到一个名叫 `font-feature-settings` 的属性，并且这个属性的 [兼容性](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings#Browser_compatibility) 要比上面两个要好一些。这是一个比较底层的属性，它允许我们直接控制 OpenType 的各种高级特性。上面代码中的 `"liga"` 指的是「Standard Ligatures」，`"kern"` 指的是「Kerning」。
 
 然而上面哪组属性兼容性都不是很好，所以在实际使用时需要组合使用，比如下面这个例子：
 
