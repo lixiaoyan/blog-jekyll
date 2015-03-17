@@ -1,5 +1,5 @@
 ---
-title: "Chrome 下 ::selection 样式的渲染问题"
+title: "Chrome 下 ::selection 背景颜色的渲染问题"
 ---
 
 ![Chrome Selection]({{ site.baseurl }}/img/chrome-selection.png)
