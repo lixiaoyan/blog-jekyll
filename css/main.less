@@ -1,0 +1,114 @@
+// out: ./main.css, strictMath: true, autoprefixer: last 2 version
+
+@header-width: 240px;
+@main-width: 720px;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.6;
+  background-color: #81c784;
+}
+
+::selection {
+  background-color: fade(#4caf50,20%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: @header-width;
+  padding: 40px;
+  text-align: center;
+  color: #fff;
+  background-color: #1b5e20;
+  box-shadow: 0 0 8px fade(#000,40%);
+
+  h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: normal;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  p {
+    margin: 0;
+    color: #e0e0e0;
+  }
+
+  .nav {
+    margin-top: 40px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      font-size: 1.2em;
+    }
+
+    a {
+      display: block;
+      padding: 0.2em 0;
+      color: #fff;
+
+      &:hover, &:active, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.main {
+  width: @main-width;
+  margin-left: @header-width;
+  padding: 0 60px;
+}
+
+.article {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 40px;
+  background-color: #e8f5e9;
+  box-shadow: 0 2px 4px fade(#000,20%);
+
+  header {
+    h1 {
+      margin: 0;
+      font-weight: normal;
+
+      a {
+        color: inherit;
+      }
+    }
+  }
+}
+
+.footer {
+  width: @main-width;
+  margin-left: @header-width;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 60px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #1b5e20;
+}

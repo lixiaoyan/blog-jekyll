@@ -13,12 +13,5 @@ defaults:
   -
     scope:
       path: ""
-      type: "pages"
     values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+      layout: "default"
