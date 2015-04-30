@@ -18,6 +18,11 @@ body {
   background-color: rgba(33, 150, 243, 0.2);
   text-shadow: none;
 }
+blog,
+post,
+raw {
+  display: block;
+}
 a {
   text-decoration: none;
 }
