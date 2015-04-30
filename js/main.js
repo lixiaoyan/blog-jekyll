@@ -20,9 +20,13 @@
       post.date = new Date(post.date);
     });
     pages = pages.filter(function(page) {
-      if(ignorePages.indexOf(page.url) == -1) {
-        return true;
+      if(ignorePages.indexOf(page.url) != -1) {
+        return false;
       }
+      if(page.url.startsWith("/file/")) {
+        return false;
+      }
+      return true;
     });
     return {
       posts: posts,
