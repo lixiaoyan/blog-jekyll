@@ -11,10 +11,12 @@ body {
   background-color: #81c784;
 }
 ::-moz-selection {
-  background-color: rgba(76, 175, 80, 0.2);
+  background-color: rgba(33, 150, 243, 0.2);
+  text-shadow: none;
 }
 ::selection {
-  background-color: rgba(76, 175, 80, 0.2);
+  background-color: rgba(33, 150, 243, 0.2);
+  text-shadow: none;
 }
 a {
   text-decoration: none;
