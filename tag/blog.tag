@@ -30,6 +30,7 @@
 
   home() {
     this.current = null;
+    document.title = "IntPtr's Blog";
     this.update();
   }
   post(context, next) {
@@ -37,6 +38,7 @@
       return post.url == context.path;
     });
     if(this.current) {
+      document.title = this.current.title + " - IntPtr's Blog";
       this.update();
     } else {
       next();
@@ -47,6 +49,7 @@
       return page.url == context.path;
     });
     if(this.current) {
+      document.title = this.current.title + " - IntPtr's Blog";
       this.update();
     } else {
       next();
