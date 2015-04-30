@@ -7,6 +7,10 @@
     <div class="content">
       <raw content={ opts.data.content } />
     </div>
+    <footer if={ opts.data.date }>
+      <span class="date">Posted on { moment(opts.data.date).format("MMMM Do, YYYY") }.</span>
+      <span class="link"><a href={ base + opts.data.url }>#permalink</a></span>
+    </footer>
   </article>
 
   this.base = base;

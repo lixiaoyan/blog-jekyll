@@ -183,6 +183,30 @@ a {
   border: none;
   border-top: 1px dashed #90a4ae;
 }
+.article footer {
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding: 20px 40px;
+  font-size: 14px;
+  border-top: 1px dashed #90a4ae;
+  color: #616161;
+}
+.article footer .date {
+  float: left;
+}
+.article footer .link {
+  float: right;
+}
+.article footer .link a {
+  color: #303f9f;
+}
+.article footer .link a:hover,
+.article footer .link a:active,
+.article footer .link a:focus {
+  text-decoration: underline;
+}
 .footer {
   width: 720px;
   margin-left: 240px;
