@@ -1,4 +1,6 @@
 (function() {
+  Prism.languages.html = Prism.languages.markup;
+
   var ignorePages = [
     "/index.html",
     "/atom.xml",

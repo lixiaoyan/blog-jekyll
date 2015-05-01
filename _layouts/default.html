@@ -7,6 +7,7 @@
     <title></title>
     <link rel="stylesheet" href="//cdn.bootcss.com/normalize/3.0.3/normalize.min.css" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/prism.css" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" />
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" />
   </head>
@@ -19,10 +20,11 @@
     <script>
       var base = {{ site.baseurl | jsonify }};
     </script>
+    <script src="{{ site.baseurl }}/lib/dom4.min.js"></script>
     <script src="{{ site.baseurl }}/lib/es6-promise.min.js"></script>
     <script src="{{ site.baseurl }}/lib/fetch.min.js"></script>
     <script src="{{ site.baseurl }}/lib/page.min.js"></script>
-    <script src="{{ site.baseurl }}/lib/dom4.min.js"></script>
+    <script src="{{ site.baseurl }}/lib/prism.min.js"></script>
     <script src="//cdn.bootcss.com/moment.js/2.10.2/moment.min.js"></script>
     <script src="//cdn.bootcss.com/riot/2.0.15/riot+compiler.min.js"></script>
     <script src="//cdn.muut.com/1/moot.min.js"></script>

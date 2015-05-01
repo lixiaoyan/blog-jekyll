@@ -56,13 +56,22 @@
     }
   }
 
-  page.base(base);
-  page("*", function(context, next) {
-    window.scrollTo(0, 0);
-    next();
+  this.on("updated", function() {
+    Array.prototype.forEach.call(document.querySelectorAll("pre > code"), function(ele) {
+      ele.parentElement.classList.add("line-numbers");
+      Prism.highlightElement(ele);
+    });
   });
-  page("/", this.home);
-  page("/post/:id", this.post);
-  page("*", this.page);
-  page.start();
+
+  this.on("mount", function() {
+    page.base(base);
+    page("*", function(context, next) {
+      window.scrollTo(0, 0);
+      next();
+    });
+    page("/", this.home);
+    page("/post/:id", this.post);
+    page("*", this.page);
+    page.start();
+  });
 </blog>
