@@ -19,7 +19,9 @@
   this.on("updated", function() {
     if(opts.entry) {
       this.root.querySelector(".comments").innerHTML = "<a class=\"muut link\" href=\"https://muut.com/i/intptr/comments\" type=\"dynamic\">Comments</a>";
-      $(this.root.querySelector(".muut")).muut();
+      setTimeout(function() {
+        $(this.root.querySelector(".muut")).muut();
+      }.bind(this), 0);
     }
   });
 </post>
