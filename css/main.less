@@ -233,6 +233,43 @@ a {
       }
     }
   }
+
+  .comments {
+    margin-left: -40px;
+    margin-right: -40px;
+    padding: 40px;
+    border-top: 1px dashed #90a4ae;
+
+    a.link {
+      display: block;
+      width: max-content;
+      margin: 0 auto;
+      font-size: 1.2em;
+      color: #303f9f;
+
+      &:hover, &:active, &:focus {
+        text-decoration: underline;
+      }
+    }
+
+    .muut {
+      &.m-app-loading {
+        padding-top: 0 !important;
+      }
+
+      .m-page {
+        padding-top: 0 !important;
+      }
+
+      #moot-logo {
+        padding-bottom: 0 !important;
+      }
+
+      #mt-start, #m-share {
+        display: none !important;
+      }
+    }
+  }
 }
 
 .footer {
