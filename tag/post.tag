@@ -8,7 +8,7 @@
       <raw content={ opts.data.content } />
     </div>
     <footer if={ opts.data.date }>
-      <span class="date">Posted on { moment(opts.data.date).format("MMMM Do, YYYY") }.</span>
+      <span class="date">Posted on <time datetime={ moment(opts.data.date).format("YYYY-MM-DD") }>{ moment(opts.data.date).format("MMMM Do, YYYY") }</time>.</span>
       <span class="link"><a href={ base + opts.data.url }>#permalink</a></span>
     </footer>
   </article>
