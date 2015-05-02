@@ -240,6 +240,9 @@ a {
 .article .comments .muut.m-app-loading {
   padding-top: 0 !important;
 }
+.article .comments .muut.is-commenting {
+  padding: 0 !important;
+}
 .article .comments .muut .m-page {
   padding-top: 0 !important;
 }
