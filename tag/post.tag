@@ -20,7 +20,7 @@
     if(opts.entry) {
       this.root.querySelector(".comments").innerHTML = "<a class=\"muut link\" href=\"https://muut.com/i/intptr/comments\" type=\"dynamic\">Comments</a>";
       setTimeout(function() {
-        $(this.root.querySelector(".muut")).muut();
+        $(this.root.querySelector("a.muut")).muut();
       }.bind(this), 0);
     }
   });
