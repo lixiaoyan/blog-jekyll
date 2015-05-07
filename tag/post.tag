@@ -4,9 +4,12 @@
       <h1 if={ opts.entry }>{ opts.data.title }</h1>
       <h1 if={ !opts.entry }><a href={ base + opts.data.url }>{ opts.data.title }</a></h1>
     </header>
-    <div class="content">
-      <raw content={ opts.data.content } if={ opts.entry } />
-      <raw content={ opts.data.excerpt } if={ !opts.entry } />
+    <div class="content" if={ opts.entry }>
+      <raw content={ opts.data.content } />
+    </div>
+    <div class="content" if={ !opts.entry }>
+      <raw content={ opts.data.excerpt } />
+      <p><a href={ base + opts.data.url } class="more">Read more...</a></p>
     </div>
     <footer if={ opts.data.date }>
       <span class="date">Posted on <time datetime={ moment(opts.data.date).format('YYYY-MM-DD') }>{ moment(opts.data.date).format("MMMM Do, YYYY") }</time>.</span>
