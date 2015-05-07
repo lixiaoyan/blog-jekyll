@@ -197,6 +197,15 @@ a {
   border: none;
   border-top: 1px dashed #90a4ae;
 }
+.article .content .more {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.2em;
+}
 .article footer {
   overflow: hidden;
   margin-top: 40px;
@@ -229,10 +238,11 @@ a {
 }
 .article .comments a.link {
   display: block;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   margin: 0 auto;
+  text-align: center;
   font-size: 1.2em;
   color: #303f9f;
 }
