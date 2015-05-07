@@ -18,6 +18,18 @@ body {
   background-color: rgba(33, 150, 243, 0.2);
   text-shadow: none;
 }
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+::-webkit-scrollbar-thumb {
+  border: 4px solid transparent;
+  background-clip: content-box;
+  background-color: #1b5e20;
+}
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
 blog,
 post,
 raw {
@@ -37,6 +49,7 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   position: fixed;
+  z-index: 100;
   left: 0;
   top: 0;
   bottom: 0;
@@ -160,6 +173,14 @@ a {
   text-shadow: 0 1px 2px #000;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
+.article .content pre::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+.article .content pre::-webkit-scrollbar-thumb {
+  border-width: 3px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
 .article .content pre code {
   display: block;
 }
@@ -184,7 +205,8 @@ a {
 .article .content img {
   display: block;
   max-width: 100%;
-  margin: 40px 0;
+  margin: 40px auto;
+  background-color: #fff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 .article .content sup,
