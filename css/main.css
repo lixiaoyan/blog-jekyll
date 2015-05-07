@@ -30,6 +30,9 @@ body {
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
+html::-webkit-scrollbar-corner {
+  background-color: #81c784;
+}
 blog,
 post,
 raw {
