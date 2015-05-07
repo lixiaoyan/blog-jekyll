@@ -20,6 +20,7 @@
     var pages = data[1];
     posts.forEach(function(post) {
       post.date = new Date(post.date);
+      post.excerpt = post.content.split("\n\n", 1)[0];
     });
     pages = pages.filter(function(page) {
       if(ignorePages.indexOf(page.url) != -1) {
