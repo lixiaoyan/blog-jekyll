@@ -137,6 +137,13 @@ a {
   line-height: 1.4;
   color: #000;
 }
+.article .content h2 code,
+.article .content h3 code,
+.article .content h4 code,
+.article .content h5 code,
+.article .content h6 code {
+  font-size: 0.9em;
+}
 .article .content h2 {
   font-size: 1.8em;
 }
@@ -222,6 +229,24 @@ a {
   margin: 40px -40px;
   border: none;
   border-top: 1px dashed #90a4ae;
+}
+.article .content .footnote:before {
+  content: "[";
+}
+.article .content .footnote:after {
+  content: "]";
+}
+.article .content .footnotes {
+  margin: 0 -40px;
+  margin-top: 40px;
+  margin-bottom: -20px;
+  padding: 0 40px;
+  border-top: 1px dashed #90a4ae;
+  font-size: 13px;
+  color: #424242;
+}
+.article .content .footnotes code {
+  font-size: 12px;
 }
 .article .content .more {
   display: block;
