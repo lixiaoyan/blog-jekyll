@@ -14,7 +14,7 @@ title: "Chrome 下 ::selection 背景颜色的渲染问题"
 </inline>
 ```
 
-在 inline （`*-level inline`） 元素内部有 block （`block-level *`） 元素的情况下。
+在 inline (`*-level inline`) 元素内部有 block (`block-level *`) 元素的情况下。
 
 * * *
 
@@ -26,7 +26,7 @@ title: "Chrome 下 ::selection 背景颜色的渲染问题"
 <block />
 ```
 
-在 inline / inline-block （`inline-level *`） 元素与 block （`block-level *`） 元素为同级元素的情况下。
+在 inline / inline-block (`inline-level *`) 元素与 block (`block-level *`) 元素为同级元素的情况下。
 
 * * *
 
@@ -35,7 +35,7 @@ title: "Chrome 下 ::selection 背景颜色的渲染问题"
 <block />
 ```
 
-在文本节点与 block （`block-level *`） 元素为同级元素的情况下。
+在文本节点与 block (`block-level *`) 元素为同级元素的情况下。
 
 * * *
 
@@ -49,4 +49,4 @@ title: "Chrome 下 ::selection 背景颜色的渲染问题"
 </ol>
 ```
 
-`<li>` （`display: list-item;`） 的默认 `::marker` 元素。
+`<li>` (`display: list-item;`) 的默认 `::marker` 元素。
