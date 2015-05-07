@@ -4,7 +4,6 @@ timezone: "Asia/Shanghai"
 permalink: "/post/:title.html"
 kramdown:
   input: GFM
-  smart_quotes: apos,apos,quot,quot
 gems:
   - jekyll-sitemap
   - jekyll-mentions
