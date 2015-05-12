@@ -9,7 +9,7 @@
     </div>
     <div class="content" if={ !opts.entry }>
       <raw content={ opts.data.excerpt } />
-      <p><a href={ base + opts.data.url } class="more">Read more...</a></p>
+      <p if={ opts.data.content != opts.data.excerpt }><a href={ base + opts.data.url } class="more">Read more...</a></p>
     </div>
     <footer if={ opts.data.date }>
       <span class="date">Posted on <time datetime={ moment(opts.data.date).format('YYYY-MM-DD') }>{ moment(opts.data.date).format("MMMM Do, YYYY") }</time>.</span>
