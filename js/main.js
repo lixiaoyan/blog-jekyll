@@ -46,6 +46,7 @@
     var ele = e.target;
     if(ele.classList.contains("footnote") || ele.classList.contains("reversefootnote")) {
       document.getElementById(ele.getAttribute("href").slice(1)).scrollIntoView();
+      e.preventDefault();
     }
   });
 })();
