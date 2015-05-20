@@ -17,7 +17,7 @@ title: "Links"
 - [猪儿](http://www.9bili.com/)
 - [iBaka9](http://www.ibaka9.com/)
 - [夏橘子](http://ovo.so/)
-- [qwe7002](http://www.qwe7002.com/)
+- [qwe7002](http://www.qwe7002.com/) (@qwe7002)
 - [⑨chu](http://www.bakachu.cn/) (@9chu)
 - [次碳酸钴](http://www.web-tinker.com/) (@YanagiEiichi)
 - [愚人陈](http://www.yurenchen.com/)
