@@ -6,6 +6,7 @@
       <ul>
         <li><a href="{ base }/links.html">Links</a></li>
         <li><a href="{ base }/books.html">Books</a></li>
+        <li><a href="http://www.intptr.im/resume/">Resume</a></li>
         <li><a href="http://www.intptr.im/">About</a></li>
         <li><a href="{ base }/atom.xml">Feed</a></li>
       </ul>
