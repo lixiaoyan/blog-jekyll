@@ -21,7 +21,7 @@
     </div>
   </main>
   <footer class="footer">
-    <p>Powered by Jekyll and Riot. Copyright &copy; 2014-2015 IntPtr.</p>
+    <p>Powered by Jekyll and Riot.js. Copyright &copy; 2014-2015 IntPtr.</p>
   </footer>
 
   this.base = base;
