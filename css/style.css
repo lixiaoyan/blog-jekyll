@@ -1,0 +1,30 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Source Sans Pro", "Segoe WP", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+  line-height: 1.6;
+}
+
+pre, code {
+  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", monospace;
+}
+
+body {
+  background-color: #1a237e;
+}
+
+.page {
+  padding: 40px;
+}
+
+.article {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
