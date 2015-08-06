@@ -4,12 +4,12 @@
 
 html {
   font-size: 16px;
-  font-family: "Source Sans Pro", "Segoe WP", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
+  font-family: "Segoe WP", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
   line-height: 1.6;
 }
 
 pre, code {
-  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", monospace;
+  font-family: "Menlo", "Monaco", "Consolas", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", monospace;
 }
 
 body {
@@ -23,8 +23,104 @@ body {
 .article {
   max-width: 600px;
   margin: 0 auto;
-  padding: 40px;
   border-radius: 2px;
   background-color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.article::before,
+.article::after {
+  content: "";
+  display: table;
+}
+
+.article header {
+  padding: 20px 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.article header h1 {
+  margin: 0;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.article .content {
+  margin: 40px;
+}
+
+.content {
+  line-height: 1.8;
+  color: #212121;
+}
+
+.content a {
+  text-decoration: none;
+  color: #e91e63;
+}
+
+.content a:hover,
+.content a:active,
+.content a:focus {
+  text-decoration: underline;
+}
+
+.content code {
+  font-size: 0.8em;
+}
+
+.content ul,
+.content ol,
+.content p {
+  margin: 20px 0;
+}
+
+.content ul,
+.content ol {
+  padding-left: 40px;
+}
+
+.content ul {
+  list-style: square;
+}
+
+.content pre {
+  margin: 40px 0;
+  line-height: 1.6;
+}
+
+.content hr {
+  margin: 40px -40px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.article-list {
+  overflow: hidden;
+  margin: -40px;
+  padding: 0;
+  list-style: none;
+  border-radius: 2px;
+}
+
+.article-list li:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.article-list a {
+  display: block;
+  padding: 20px 40px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  transition: background-color 200ms;
+}
+
+.article-list a:hover,
+.article-list a:active,
+.article-list a:focus {
+  background-color: #fafafa;
+}
+
+.article-list a:focus {
+  outline: none;
 }
