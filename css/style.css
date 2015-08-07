@@ -13,6 +13,8 @@ pre, code {
 }
 
 body {
+  word-wrap: break-word;
+  text-rendering: optimizeLegibility;
   background-color: #1a237e;
 }
 
@@ -23,6 +25,7 @@ body {
 .article {
   max-width: 600px;
   margin: 0 auto;
+  text-align: justify;
   border-radius: 2px;
   background-color: #fff;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -51,7 +54,7 @@ body {
 
 .content {
   line-height: 1.8;
-  color: #212121;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .content a {
@@ -97,7 +100,7 @@ body {
 
 .article-list {
   overflow: hidden;
-  margin: -40px;
+  margin: 0;
   padding: 0;
   list-style: none;
   border-radius: 2px;
