@@ -26,6 +26,58 @@ body {
   padding: 40px;
 }
 
+.header {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: -40px;
+  padding: 80px 0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: normal;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+}
+
+.nav li:not(:last-child)::after {
+  content: " / ";
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.nav a {
+  display: inline-block;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 200ms;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .article {
   max-width: 600px;
   margin: 0 auto;
