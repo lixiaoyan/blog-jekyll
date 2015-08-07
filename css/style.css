@@ -27,6 +27,7 @@ body {
 }
 
 .article {
+  position: relative;
   max-width: 600px;
   margin: 0 auto;
   text-align: justify;
@@ -54,6 +55,10 @@ body {
 
 .article .content {
   margin: 40px;
+}
+
+.article .back {
+  position: absolute;
 }
 
 .content {
