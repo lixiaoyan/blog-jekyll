@@ -27,7 +27,6 @@ body {
 }
 
 .article {
-  position: relative;
   max-width: 600px;
   margin: 0 auto;
   text-align: justify;
@@ -55,31 +54,6 @@ body {
 
 .article .content {
   margin: 40px;
-}
-
-.article .back {
-  position: absolute;
-  left: 0;
-  top: 44px;
-  width: 60px;
-  height: 60px;
-  margin: -30px;
-  border-radius: 100%;
-  text-decoration: none;
-  color: #fff;
-  background-color: #e91e63;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.article .back .material-icons {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 1em;
-  height: 1em;
-  margin: auto;
 }
 
 .content {
@@ -276,4 +250,34 @@ body {
 
 .article-list a:focus {
   outline: none;
+}
+
+.back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  margin: 20px;
+  border-radius: 100%;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 200ms;
+}
+
+.back:hover,
+.back:active,
+.back:focus {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.article .back .material-icons {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 1em;
+  height: 1em;
+  margin: auto;
 }
