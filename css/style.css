@@ -188,8 +188,9 @@ body {
 
 .meta {
   padding: 20px 40px;
-  font-size: 0.9em;
+  font-size: 0.8em;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .meta::before,
@@ -208,6 +209,17 @@ body {
 
 .meta .link {
   float: right;
+}
+
+.meta .link a {
+  text-decoration: none;
+  color: #e91e63;
+}
+
+.meta .link a:hover,
+.meta .link a:active,
+.meta .link a:focus {
+  text-decoration: underline;
 }
 
 .article-list {
@@ -238,18 +250,4 @@ body {
 
 .article-list a:focus {
   outline: none;
-}
-
-.footer {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-top: 40px;
-  font-size: 0.8em;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.6);
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2);
-}
-
-.footer p {
-  margin: 0;
 }
