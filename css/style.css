@@ -66,7 +66,6 @@ body {
 
 .nav a {
   display: inline-block;
-  font-size: 1.2em;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition: color 200ms;
@@ -78,7 +77,8 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.article {
+.article,
+.comments {
   max-width: 600px;
   margin: 0 auto;
   text-align: justify;
@@ -302,6 +302,50 @@ body {
 
 .article-list a:focus {
   outline: none;
+}
+
+.comments {
+  margin-top: 40px;
+  padding: 40px;
+}
+
+.comments a.link {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: none;
+  color: #e91e63;
+}
+
+.comments a.link:hover,
+.comments a.link:active,
+.comments a.link:focus {
+  text-decoration: underline;
+}
+
+.comments .muut.m-app-loading {
+  padding-top: 0 !important;
+}
+
+.comments .muut.is-commenting {
+  padding: 0 !important;
+}
+
+.comments .muut .m-page {
+  padding-top: 0 !important;
+}
+
+.comments .muut #moot-logo {
+  padding-bottom: 0 !important;
+}
+
+.comments .muut #mt-start,
+.comments .muut #m-share {
+  display: none !important;
 }
 
 .back {
