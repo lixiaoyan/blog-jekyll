@@ -40,7 +40,7 @@ font-feature-settings: "liga" on, "kern" on;
 
 > ff fi ffi fl ffl
 > AV VA
-{:style="font-size: 1.5em; line-height: 1.4;"}
+{:style="font-size: 1.5em; line-height: 1.5;"}
 
 * * *
 
