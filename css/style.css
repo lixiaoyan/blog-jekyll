@@ -3,6 +3,7 @@
 }
 
 html {
+  overflow-y: scroll;
   font-size: 16px;
   font-family: "Segoe WP", "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", sans-serif;
   line-height: 1.5;
