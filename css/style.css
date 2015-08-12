@@ -15,6 +15,10 @@ body {
   -webkit-font-kerning: normal;
   font-kerning: normal;
   background-color: #1a237e;
+  background-image: url(../img/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 pre, code {
