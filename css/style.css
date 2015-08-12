@@ -50,7 +50,7 @@ pre, code {
 .header h1 {
   margin: 0;
   font-size: 3em;
-  font-weight: normal;
+  font-weight: 300;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -81,14 +81,14 @@ pre, code {
 .nav a {
   display: inline-block;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
   transition: color 200ms;
 }
 
 .nav a:hover,
 .nav a:active,
 .nav a:focus {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .article,
