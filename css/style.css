@@ -37,6 +37,7 @@ pre, code {
 }
 
 .page {
+  overflow: hidden;
   padding: 40px;
 }
 
@@ -385,4 +386,27 @@ pre, code {
   width: 1em;
   height: 1em;
   margin: auto;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 0;
+  }
+
+  .article,
+  .comments {
+    border-radius: 0;
+  }
+
+  .back {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .article,
+  .comments {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 }
