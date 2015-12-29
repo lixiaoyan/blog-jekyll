@@ -388,7 +388,7 @@ pre, code {
   margin: auto;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
   .page {
     padding: 0;
   }
