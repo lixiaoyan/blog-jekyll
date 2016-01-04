@@ -416,6 +416,10 @@ pre, code {
 }
 
 @media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
   .header {
     padding: 40px 0;
   }
