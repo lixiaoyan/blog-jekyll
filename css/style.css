@@ -52,7 +52,19 @@ pre, code {
   font-size: 3em;
   font-weight: 300;
   text-align: center;
+}
+
+.header h1 a {
+  display: inline-block;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
+  transition: color 200ms;
+}
+
+.header h1 a:hover,
+.header h1 a:active,
+.header h1 a:focus {
+  color: #fff;
 }
 
 .nav {
