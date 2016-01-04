@@ -404,6 +404,10 @@ pre, code {
 }
 
 @media (max-width: 480px) {
+  .header {
+    padding: 40px 0;
+  }
+
   .article,
   .comments {
     margin-left: -20px;
