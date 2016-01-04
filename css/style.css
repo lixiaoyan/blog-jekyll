@@ -371,8 +371,10 @@ pre, code {
 }
 
 .footer {
+  max-width: 600px;
   padding: 20px;
   font-size: 0.8em;
+  text-align: center;
   color: rgba(255, 255, 255, 0.6);
 }
 
