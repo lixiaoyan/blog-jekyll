@@ -370,6 +370,16 @@ pre, code {
   display: none !important;
 }
 
+.footer {
+  padding: 20px;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer p {
+  margin: 0;
+}
+
 .back {
   position: absolute;
   left: 0;
