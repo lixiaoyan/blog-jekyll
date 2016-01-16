@@ -16,4 +16,4 @@ title: "About"
 - Bangumi: [intptr](http://bgm.tv/user/intptr)
 - V2EX: [IntPtr](http://www.v2ex.com/member/IntPtr)
 - Div.IO: [IntPtr](http://div.io/user/IntPtr)
-- SegmentFault: [IntPtr](http://segmentfault.com/u/intptr)
+- SegmentFault: [intptr](http://segmentfault.com/u/intptr)
