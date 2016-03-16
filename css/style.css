@@ -23,7 +23,7 @@ body {
 }
 
 pre, code {
-  font-family: "Menlo", "Monaco", "Consolas", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", monospace;
+  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "Lantinghei SC", "Lantinghei TC", "Hiragino Sans GB", "Microsoft JhengHei", "Microsoft YaHei", monospace;
 }
 
 ::-moz-selection {
