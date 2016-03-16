@@ -14,6 +14,5 @@ title: "About"
 - Keybase: [intptr](https://keybase.io/intptr)
 - Telegram: [intptr](https://telegram.me/intptr)
 - Bangumi: [intptr](http://bgm.tv/user/intptr)
+- Zhihu: [intptr](https://www.zhihu.com/people/intptr)
 - V2EX: [IntPtr](http://www.v2ex.com/member/IntPtr)
-- Div.IO: [IntPtr](http://div.io/user/IntPtr)
-- SegmentFault: [intptr](http://segmentfault.com/u/intptr)
