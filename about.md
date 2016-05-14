@@ -11,6 +11,7 @@ title: "About"
 - E-mail: <lxy.lixiaoyan@gmail.com>
 - GitHub: @lixiaoyan
 - Google+: [+lixiaoyan](https://plus.google.com/+lixiaoyan)
+- Twitter: [lxy_lixiaoyan](https://twitter.com/lxy_lixiaoyan)
 - Keybase: [intptr](https://keybase.io/intptr)
 - Telegram: [intptr](https://telegram.me/intptr)
 - Bangumi: [intptr](http://bgm.tv/user/intptr)
