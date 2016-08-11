@@ -101,6 +101,10 @@ code {
 .banner ::selection {
   background-color: rgba(255, 255, 255, 0.2);
 }
+.header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .header .logo {
   float: left;
   margin-left: -1rem;
