@@ -5,31 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
     <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}/atom.xml" />
     <title>{% if page.title %}{{ page.title }} - {% endif %}IntPtr's Blog</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ropa+Sans" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/4.2.0/normalize.min.css" />
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
-    <link rel="stylesheet" href="https://cdn.muut.com/1/moot.css" />
   </head>
   <body>
     <div class="page">
-      <header class="header">
-        <h1><a href="{{ site.baseurl }}/">IntPtr's Blog</a></h1>
-        <nav class="nav">
-          <ul>
-            <li><a href="{{ site.baseurl }}/links.html">Links</a></li>
-            <li><a href="{{ site.baseurl }}/books.html">Books</a></li>
-            <li><a href="{{ site.baseurl }}/about.html">About</a></li>
-          </ul>
-        </nav>
-      </header>
+      <div class="banner">
+        <header class="header">
+          <div class="logo">
+            <a href="{{ site.baseurl }}/">
+              <img src="{{ site.baseurl }}/logo-x-small-white.svg" alt="IntPtr" />
+            </a>
+          </div>
+          <nav class="nav">
+            {% capture url %}{{ page.url }}.html{% endcapture %}
+            <ul>
+              {% for item in site.navs %}
+                <li><a {% if item.url == url %}class="active"{% endif %} href="{{ site.baseurl }}{{ item.url }}">{{ item.name }}</a></li>
+              {% endfor %}
+            </ul>
+          </nav>
+        </header>
+        <div class="title">
+          <h1>{{ page.title }}</h1>
+        </div>
+      </div>
       {{ content }}
       <footer class="footer">
         <p>Licensed under CC BY-NC-SA 4.0 International.</p>
         <p>Copyright &copy; 2014-2016 IntPtr.</p>
       </footer>
     </div>
-    <script src="https://cdn.muut.com/1/moot.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
   </body>
 </html>

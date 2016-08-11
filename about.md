@@ -2,11 +2,7 @@
 title: "About"
 ---
 
-## Projects
-
-- [X-View](http://www.x-view.org/)
-
-## Contacts
+### Contacts
 
 - E-mail: <lxy.lixiaoyan@gmail.com>
 - GitHub: @lixiaoyan

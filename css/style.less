@@ -1,0 +1,422 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+  font-family: "Ropa Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  word-wrap: break-word;
+  font-variant-ligatures: common-ligatures;
+  font-kerning: normal;
+  background-color: #fafafa;
+}
+
+pre, code {
+  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", monospace;
+}
+
+::selection {
+  background-color: fade(#2196f3, 20%);
+  text-shadow: none;
+}
+
+.clearfix {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.icon-base {
+  direction: ltr;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  letter-spacing: normal;
+  white-space: nowrap;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "liga";
+}
+
+.icon {
+  &:extend(.icon-base);
+
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+}
+
+.page {
+  padding: 0 2rem;
+}
+
+.banner {
+  margin: 0 -2rem;
+  padding: 0 2rem;
+  color: #fff;
+  background-color: #2196f3;
+
+  ::selection {
+    background-color: fade(#fff, 20%);
+  }
+}
+
+.header {
+  &:extend(.clearfix all);
+
+  .logo {
+    float: left;
+    margin-left: -1rem;
+  }
+
+  .nav {
+    float: right;
+    margin-right: -1rem;
+  }
+}
+
+.logo {
+  float: left;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: normal;
+
+  a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  img {
+    display: block;
+    height: 2.5rem;
+  }
+}
+
+.nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    float: left;
+  }
+
+  a {
+    position: relative;
+    display: block;
+    padding: 1.25rem 1rem;
+    text-decoration: none;
+    color: inherit;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.5rem;
+      border-bottom: 2px solid transparent;
+      transition: border-color 200ms;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      &::after {
+        border-color: fade(#fff, 40%);
+      }
+    }
+
+    &.active::after {
+      border-color: fade(#fff, 80%);
+    }
+  }
+}
+
+.title {
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+  text-align: center;
+
+  h1 {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+}
+
+.article {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.content {
+  margin: 4rem 0;
+  line-height: 1.8;
+  color: fade(#000, 65%);
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+    color: fade(#000, 80%);
+  }
+
+  h2,
+  h3 {
+    &::before {
+      &:extend(.icon);
+
+      content: "star";
+      position: absolute;
+      right: 100%;
+      top: 45%;
+      margin-right: 1.5rem;
+      font-size: 1.5rem;
+      color: #90a4ae;
+      transform: translateY(-50%);
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5,
+  h6 {
+    font-size: 1rem;
+  }
+
+  ul,
+  ol,
+  p {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ul,
+  ol {
+    padding-left: 2rem;
+  }
+
+  ul {
+    list-style: square;
+  }
+
+  a {
+    text-decoration: none;
+    color: #ff3d00;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  code {
+    font-size: 0.875em;
+  }
+
+  pre {
+    position: relative;
+    margin: 3rem 0;
+    padding: 1.5rem;
+    border-radius: 2px;
+    line-height: 1.5;
+    background-color: #eceff1;
+
+    &::before {
+      &:extend(.icon);
+
+      content: "code";
+      position: absolute;
+      right: 100%;
+      top: 0;
+      margin-right: 1.5rem;
+      font-size: 1.5rem;
+      color: #90a4ae;
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      border-left: 2px solid #cfd8dc;
+      border-radius: 2px 0 0 2px;
+    }
+
+    code {
+      display: block;
+      font-size: inherit;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
+  blockquote {
+    position: relative;
+    margin: 3rem 0;
+
+    &::before {
+      &:extend(.icon);
+
+      content: "format_quote";
+      position: absolute;
+      right: 100%;
+      top: 0;
+      margin-right: 1.5rem;
+      font-size: 1.5rem;
+      color: #90a4ae;
+      transform: rotate(180deg);
+
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+  }
+
+  sup,
+  sub {
+    font-size: 0.75rem;
+    color: fade(#000, 50%);
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 3rem auto;
+    border-radius: 2px;
+  }
+
+  hr {
+    margin: 3rem -6rem;
+    border: 0;
+    border-bottom: 1px solid fade(#000, 10%);
+  }
+
+  .footnote {
+    &::before {
+      content: "[";
+    }
+
+    &::after {
+      content: "]";
+    }
+  }
+
+  .footnotes {
+    &:extend(.clearfix all);
+
+    margin: 0 -6rem;
+    margin-top: 4rem;
+    margin-bottom: -4rem;
+    padding: 0 6rem;
+    border-top: 1px solid fade(#000, 10%);
+    font-size: 0.75rem;
+  }
+}
+
+.meta {
+  &:extend(.clearfix all);
+
+  margin: 4rem -6rem;
+  padding: 2rem 6rem;
+  font-size: 0.875em;
+  border-top: 1px solid fade(#000, 10%);
+  color: fade(#000, 50%);
+
+  .social {
+    float: left;
+
+    > div {
+      display: block;
+    }
+  }
+
+  .time {
+    float: right;
+  }
+}
+
+.article-list {
+  margin: 4rem 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0 -6rem;
+    padding: 0 6rem;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid fade(#000, 10%);
+    }
+  }
+
+  a {
+    display: block;
+    margin: 0 -6rem;
+    padding: 1.5rem 6rem;
+    text-decoration: none;
+    color: fade(#000, 80%);
+  }
+}
+
+.footer {
+  max-width: 960px;
+  margin: 4rem auto;
+  font-size: 0.75rem;
+  text-align: center;
+  color: fade(#000, 40%);
+}
+
+.footer p {
+  margin: 0;
+}

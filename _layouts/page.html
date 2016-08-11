@@ -3,15 +3,12 @@ layout: "default"
 ---
 
 <article class="article">
-  {% if page.title %}
-    <header>
-      <h1>{{ page.title }}</h1>
-    </header>
-  {% endif %}
   <div class="content">
     {{ content }}
   </div>
+  <div class="meta">
+    <div class="social">
+      <div class="g-plusone"></div>
+    </div>
+  </div>
 </article>
-<div class="comments">
-  <a href="https://muut.com/i/intptr/comments" type="dynamic" class="link muut">Comments</a>
-</div>
