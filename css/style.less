@@ -10,6 +10,10 @@ html {
   font-family: "Ropa Sans", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+
+  @media (max-width: 640px) {
+    font-size: 14px;
+  }
 }
 
 body {
@@ -64,7 +68,12 @@ pre, code {
 }
 
 .page {
+  overflow: hidden;
   padding: 0 2rem;
+
+  @media (max-width: 640px) {
+    padding: 0 1rem;
+  }
 }
 
 .banner {
@@ -158,11 +167,19 @@ pre, code {
   padding-bottom: 4rem;
   text-align: center;
 
+  @media (max-width: 640px) {
+    padding-top: 4rem;
+  }
+
   h1 {
     max-width: 960px;
     margin: 0 auto;
     font-size: 2.5rem;
     font-weight: normal;
+
+    @media (max-width: 800px) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -259,11 +276,12 @@ pre, code {
 
   pre {
     position: relative;
+    overflow-x: auto;
     margin: 3rem 0;
-    padding: 1.5rem;
     border-radius: 2px;
     line-height: 1.5;
     background-color: #eceff1;
+    box-shadow: inset 12px 0 0 -10px #cfd8dc;
 
     &::before {
       &:extend(.icon);
@@ -281,19 +299,9 @@ pre, code {
       }
     }
 
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      border-left: 2px solid #cfd8dc;
-      border-radius: 2px 0 0 2px;
-    }
-
     code {
-      display: block;
-      font-size: inherit;
+      float: left;
+      padding: 1.5rem;
     }
 
     a {
@@ -316,9 +324,13 @@ pre, code {
       font-size: 1.5rem;
       color: #90a4ae;
       transform: rotate(180deg);
+    }
 
-      @media (max-width: 800px) {
-        display: none;
+    @media (max-width: 800px) {
+      margin-left: 2rem;
+
+      &::before {
+        margin-right: 0.5rem;
       }
     }
   }
