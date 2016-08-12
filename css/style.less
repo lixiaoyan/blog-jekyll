@@ -75,7 +75,25 @@ pre, code {
   }
 }
 
+.pattern(@size: 64px; @width: 2px; @color: #000) {
+  @colors:
+    transparent (@size / 4     * sqrt(2) - @width / 2),
+    @color      (@size / 4     * sqrt(2) - @width / 2),
+    @color      (@size / 4     * sqrt(2) + @width / 2),
+    transparent (@size / 4     * sqrt(2) + @width / 2),
+    transparent (@size / 4 * 3 * sqrt(2) - @width / 2),
+    @color      (@size / 4 * 3 * sqrt(2) - @width / 2),
+    @color      (@size / 4 * 3 * sqrt(2) + @width / 2),
+    transparent (@size / 4 * 3 * sqrt(2) + @width / 2);
+  background-position: 0 0, 0 @size;
+  background-size: @size (@size * 2);
+  background-image:
+    linear-gradient(135deg, @colors),
+    linear-gradient(225deg, @colors);
+}
+
 .banner {
+  position: relative;
   margin: 0 -2rem;
   padding: 0 2rem;
   color: #fff;
@@ -84,10 +102,29 @@ pre, code {
   ::selection {
     background-color: fade(#fff, 20%);
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.1;
+
+    .pattern(@color: #fff);
+  }
+
+  .header,
+  .title {
+    position: relative;
+    z-index: 1;
+  }
 }
 
 .header {
   &:extend(.clearfix all);
+
   max-width: 1200px;
   margin: 0 auto;
 
