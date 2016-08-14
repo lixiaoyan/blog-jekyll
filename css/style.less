@@ -1,3 +1,6 @@
+@sans-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+@mono-fonts: "Menlo", "Monaco", "Consolas", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", monospace;
+
 *,
 *::before,
 *::after {
@@ -6,7 +9,7 @@
 
 html {
   overflow-y: scroll;
-  font-family: "Ropa Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+  font-family: "Ropa Sans", @sans-fonts;
   font-size: 16px;
   line-height: 1.5;
 
@@ -20,10 +23,6 @@ body {
   font-variant-ligatures: common-ligatures;
   font-kerning: normal;
   background-color: #fafafa;
-}
-
-pre, code {
-  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", monospace;
 }
 
 ::selection {
@@ -143,7 +142,7 @@ pre, code {
   float: left;
   margin: 0;
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 400;
 
   a {
     display: block;
@@ -213,7 +212,7 @@ pre, code {
     max-width: 960px;
     margin: 0 auto;
     font-size: 2.5rem;
-    font-weight: normal;
+    font-weight: 400;
 
     @media (max-width: 800px) {
       font-size: 2rem;
@@ -229,6 +228,7 @@ pre, code {
 
 .content {
   margin: 4rem 0;
+  font-family: "Source Sans Pro", @sans-fonts;
   line-height: 1.8;
   color: fade(#000, 65%);
 
@@ -240,7 +240,7 @@ pre, code {
     position: relative;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
-    font-weight: normal;
+    font-weight: 400;
     color: fade(#000, 80%);
   }
 
@@ -309,6 +309,7 @@ pre, code {
   }
 
   code {
+    font-family: "Source Code Pro", @mono-fonts;
     font-size: 0.875em;
   }
 

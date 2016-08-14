@@ -22,10 +22,6 @@ body {
           font-kerning: normal;
   background-color: #fafafa;
 }
-pre,
-code {
-  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", monospace;
-}
 ::-moz-selection {
   background-color: rgba(33, 150, 243, 0.2);
   text-shadow: none;
@@ -136,7 +132,7 @@ code {
   float: left;
   margin: 0;
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 .logo a {
   display: block;
@@ -195,7 +191,7 @@ code {
   max-width: 960px;
   margin: 0 auto;
   font-size: 2.5rem;
-  font-weight: normal;
+  font-weight: 400;
 }
 @media (max-width: 800px) {
   .title h1 {
@@ -209,6 +205,7 @@ code {
 }
 .content {
   margin: 4rem 0;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
   line-height: 1.8;
   color: rgba(0, 0, 0, 0.65);
 }
@@ -220,7 +217,7 @@ code {
   position: relative;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
 }
 .content h2::before,
@@ -277,6 +274,7 @@ code {
   text-decoration: underline;
 }
 .content code {
+  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", monospace;
   font-size: 0.875em;
 }
 .content pre {
