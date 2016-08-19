@@ -381,6 +381,7 @@ body {
   margin-top: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
 }
 .article-list li {
   margin: 0 -6rem;
