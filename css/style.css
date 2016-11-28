@@ -367,14 +367,11 @@ body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.5);
 }
-.meta .social {
-  float: left;
-}
-.meta .social > div {
-  display: block;
+.meta:empty {
+  padding: 0;
 }
 .meta .time {
-  float: right;
+  text-align: center;
 }
 .article-list {
   margin: 4rem 0;

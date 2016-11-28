@@ -424,16 +424,12 @@ body {
   border-top: 1px solid fade(#000, 10%);
   color: fade(#000, 50%);
 
-  .social {
-    float: left;
-
-    > div {
-      display: block;
-    }
+  &:empty {
+    padding: 0;
   }
 
   .time {
-    float: right;
+    text-align: center;
   }
 }
 
