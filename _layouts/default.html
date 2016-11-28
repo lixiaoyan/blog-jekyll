@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
     <script>
       if (location.protocol === "http:") {
-        location.protocol = "https:";
+        location.replace(location.href.replace(/^http:/, "https:"));
       }
     </script>
   </head>
