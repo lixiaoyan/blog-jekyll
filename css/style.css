@@ -220,6 +220,33 @@ body {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
 }
+.content h2 + h2,
+.content h3 + h2,
+.content h4 + h2,
+.content h5 + h2,
+.content h6 + h2,
+.content h2 + h3,
+.content h3 + h3,
+.content h4 + h3,
+.content h5 + h3,
+.content h6 + h3,
+.content h2 + h4,
+.content h3 + h4,
+.content h4 + h4,
+.content h5 + h4,
+.content h6 + h4,
+.content h2 + h5,
+.content h3 + h5,
+.content h4 + h5,
+.content h5 + h5,
+.content h6 + h5,
+.content h2 + h6,
+.content h3 + h6,
+.content h4 + h6,
+.content h5 + h6,
+.content h6 + h6 {
+  margin-top: 1.5rem;
+}
 .content h2::before,
 .content h3::before {
   content: "star";
@@ -251,9 +278,10 @@ body {
 .content h6 {
   font-size: 1rem;
 }
+.content p,
 .content ul,
 .content ol,
-.content p {
+.content dl {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
@@ -263,6 +291,13 @@ body {
 }
 .content ul {
   list-style: square;
+}
+.content dl dt {
+  font-weight: 600;
+}
+.content dl dd {
+  margin-left: 0;
+  margin-bottom: 1.5rem;
 }
 .content a {
   text-decoration: none;
