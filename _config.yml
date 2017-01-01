@@ -10,8 +10,6 @@ gems:
 navs:
   - name: "Links"
     url: "/links.html"
-  - name: "Books"
-    url: "/books.html"
   - name: "About"
     url: "/about.html"
 defaults:
