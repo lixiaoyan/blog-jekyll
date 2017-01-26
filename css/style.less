@@ -68,6 +68,7 @@ body {
 }
 
 .page {
+  position: relative;
   overflow: hidden;
   padding: 0 2rem;
 
@@ -77,10 +78,15 @@ body {
 }
 
 .banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   margin: 0 -2rem;
   padding: 0 2rem;
   color: #fff;
   background-color: #2196f3;
+  box-shadow: 0 2px 4px fade(#000, 20%);
 
   ::selection {
     background-color: fade(#fff, 20%);
@@ -168,7 +174,9 @@ body {
 .main {
   &:extend(.clearfix all);
 
-  min-height: calc(100vh - 4rem - 5.25rem);
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 5.25rem;
 }
 
 .article {
@@ -275,6 +283,7 @@ body {
 
   pre {
     overflow-x: auto;
+    overflow-y: hidden;
     margin: 3rem 0;
     border-radius: 2px;
     line-height: 1.5;
@@ -413,6 +422,10 @@ body {
 }
 
 .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
   margin: 0 -2rem;
   padding: 1.5rem 2rem;
   font-size: 0.75rem;
