@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-### Contacts
-
 - E-mail: <lxy.lixiaoyan@gmail.com>
 - GitHub: @lixiaoyan
 - Google+: [+lixiaoyan](https://plus.google.com/+lixiaoyan)

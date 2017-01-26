@@ -1,5 +1,8 @@
-@sans-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
-@mono-fonts: "Menlo", "Monaco", "Consolas", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", monospace;
+@content-width: 640px;
+
+@cjk-fonts: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC";
+@sans-fonts: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", @cjk-fonts, sans-serif;
+@mono-fonts: "Menlo", "Monaco", "Consolas", @cjk-fonts, monospace;
 
 *,
 *::before,
@@ -8,12 +11,13 @@
 }
 
 html {
+  overflow-x: hidden;
   overflow-y: scroll;
   font-family: "Ropa Sans", @sans-fonts;
   font-size: 16px;
   line-height: 1.5;
 
-  @media (max-width: 640px) {
+  @media (max-width: @content-width) {
     font-size: 14px;
   }
 }
@@ -22,12 +26,10 @@ body {
   word-wrap: break-word;
   font-variant-ligatures: common-ligatures;
   font-kerning: normal;
-  background-color: #fafafa;
 }
 
 ::selection {
   background-color: fade(#2196f3, 20%);
-  text-shadow: none;
 }
 
 .clearfix {
@@ -69,30 +71,12 @@ body {
   overflow: hidden;
   padding: 0 2rem;
 
-  @media (max-width: 640px) {
+  @media (max-width: @content-width) {
     padding: 0 1rem;
   }
 }
 
-.pattern(@size: 64px; @width: 2px; @color: #000) {
-  @colors:
-    transparent (@size / 4     * sqrt(2) - @width / 2),
-    @color      (@size / 4     * sqrt(2) - @width / 2),
-    @color      (@size / 4     * sqrt(2) + @width / 2),
-    transparent (@size / 4     * sqrt(2) + @width / 2),
-    transparent (@size / 4 * 3 * sqrt(2) - @width / 2),
-    @color      (@size / 4 * 3 * sqrt(2) - @width / 2),
-    @color      (@size / 4 * 3 * sqrt(2) + @width / 2),
-    transparent (@size / 4 * 3 * sqrt(2) + @width / 2);
-  background-position: 0 0, 0 @size;
-  background-size: @size (@size * 2);
-  background-image:
-    linear-gradient(135deg, @colors),
-    linear-gradient(225deg, @colors);
-}
-
 .banner {
-  position: relative;
   margin: 0 -2rem;
   padding: 0 2rem;
   color: #fff;
@@ -100,24 +84,6 @@ body {
 
   ::selection {
     background-color: fade(#fff, 20%);
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0.1;
-
-    .pattern(@color: #fff);
-  }
-
-  .header,
-  .title {
-    position: relative;
-    z-index: 1;
   }
 }
 
@@ -199,50 +165,36 @@ body {
   }
 }
 
-.title {
-  padding-top: 12rem;
-  padding-bottom: 4rem;
-  text-align: center;
+.main {
+  &:extend(.clearfix all);
 
-  @media (max-width: 640px) {
-    padding-top: 4rem;
-  }
-
-  h1 {
-    max-width: 960px;
-    margin: 0 auto;
-    font-size: 2.5rem;
-    font-weight: 400;
-
-    @media (max-width: 800px) {
-      font-size: 2rem;
-    }
-  }
+  min-height: calc(100vh - 4rem - 5.25rem);
 }
 
 .article {
-  max-width: 640px;
-  margin: 0 auto;
-  text-align: justify;
+  max-width: @content-width;
+  margin: 3rem auto;
 }
 
 .content {
-  margin: 4rem 0;
+  margin: 3rem 0;
   font-family: "Source Sans Pro", @sans-fonts;
   line-height: 1.8;
-  color: fade(#000, 65%);
+  text-align: justify;
+  color: fade(#000, 80%);
 
+  h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    position: relative;
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     font-weight: 400;
-    color: fade(#000, 80%);
+    color: #000;
 
+    & + h1,
     & + h2,
     & + h3,
     & + h4,
@@ -252,41 +204,25 @@ body {
     }
   }
 
-  h2,
-  h3 {
-    &::before {
-      &:extend(.icon);
-
-      content: "star";
-      position: absolute;
-      right: 100%;
-      top: 45%;
-      margin-right: 1.5rem;
-      font-size: 1.5rem;
-      color: #90a4ae;
-      transform: translateY(-50%);
-
-      @media (max-width: 800px) {
-        display: none;
-      }
-    }
+  h1 {
+    font-size: 2em;
   }
 
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.75em;
   }
 
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   h4 {
-    font-size: 1.25rem;
+    font-size: 1.25em;
   }
 
   h5,
   h6 {
-    font-size: 1rem;
+    font-size: 1em;
   }
 
   p,
@@ -308,13 +244,17 @@ body {
 
   dl {
     dt {
-      font-weight: 600;
+      font-weight: 700;
     }
 
     dd {
       margin-left: 0;
       margin-bottom: 1.5rem;
     }
+  }
+
+  small {
+    font-size: 0.75em;
   }
 
   a {
@@ -334,29 +274,12 @@ body {
   }
 
   pre {
-    position: relative;
     overflow-x: auto;
     margin: 3rem 0;
     border-radius: 2px;
     line-height: 1.5;
     background-color: #eceff1;
     box-shadow: inset 12px 0 0 -10px #cfd8dc;
-
-    &::before {
-      &:extend(.icon);
-
-      content: "code";
-      position: absolute;
-      right: 100%;
-      top: 0;
-      margin-right: 1.5rem;
-      font-size: 1.5rem;
-      color: #90a4ae;
-
-      @media (max-width: 800px) {
-        display: none;
-      }
-    }
 
     code {
       float: left;
@@ -371,33 +294,25 @@ body {
   blockquote {
     position: relative;
     margin: 1.5rem 0;
+    padding-left: 2rem;
 
     &::before {
       &:extend(.icon);
 
       content: "format_quote";
       position: absolute;
-      right: 100%;
+      left: 0;
       top: 0;
-      margin-right: 1.5rem;
       font-size: 1.5rem;
       color: #90a4ae;
       transform: rotate(180deg);
-    }
-
-    @media (max-width: 800px) {
-      margin-left: 2rem;
-
-      &::before {
-        margin-right: 0.5rem;
-      }
     }
   }
 
   sup,
   sub {
-    font-size: 0.75rem;
-    color: fade(#000, 50%);
+    font-size: 0.75em;
+    color: fade(#000, 60%);
   }
 
   img {
@@ -408,7 +323,7 @@ body {
   }
 
   hr {
-    margin: 3rem -6rem;
+    margin: 3rem 0;
     border: 0;
     border-bottom: 1px solid fade(#000, 10%);
   }
@@ -426,24 +341,28 @@ body {
   .footnotes {
     &:extend(.clearfix all);
 
-    margin: 0 -6rem;
     margin-top: 4rem;
     margin-bottom: -4rem;
-    padding: 0 6rem;
     border-top: 1px solid fade(#000, 10%);
-    font-size: 0.75rem;
+    font-size: 0.75em;
+
+    ol {
+      padding-left: 1.5rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
   }
 }
 
 .meta {
-  &:extend(.clearfix all);
-
-  margin: 4rem -6rem;
-  padding: 2rem 6rem;
-  font-size: 0.875em;
+  margin: 3rem 0;
+  padding: 1.5rem 0;
+  font-size: 0.875rem;
   border-top: 1px solid fade(#000, 10%);
   border-bottom: 1px solid fade(#000, 10%);
-  color: fade(#000, 50%);
+  color: fade(#000, 60%);
 
   &:empty {
     padding: 0;
@@ -456,41 +375,50 @@ body {
 }
 
 .article-list {
-  margin: 4rem 0;
-  margin-top: 0;
+  max-width: @content-width;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-  text-align: center;
 
   li {
-    margin: 0 -6rem;
-    padding: 0 6rem;
+    &:extend(.clearfix all);
 
     &:not(:last-child) {
       border-bottom: 1px solid fade(#000, 10%);
     }
   }
 
-  a {
-    display: block;
-    margin: 0 -6rem;
-    padding: 1.5rem 6rem;
-    text-decoration: none;
-    color: fade(#000, 80%);
+  .article {
+    a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1 {
+      margin: 0.5rem 0;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 0.875em;
+      color: fade(#000, 60%);
+    }
   }
 }
 
 .comments {
-  max-width: 640px;
-  margin: 4rem auto;
+  max-width: @content-width;
+  margin: 3rem auto;
 }
 
 .footer {
-  max-width: 960px;
-  margin: 4rem auto;
+  margin: 0 -2rem;
+  padding: 1.5rem 2rem;
   font-size: 0.75rem;
   text-align: center;
   color: fade(#000, 40%);
+  background-color: #f5f5f5;
 }
 
 .footer p {

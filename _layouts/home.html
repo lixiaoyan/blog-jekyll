@@ -2,10 +2,17 @@
 layout: "default"
 ---
 
-<article class="article">
-  <ul class="article-list">
-    {% for post in site.posts %}
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</article>
+<ul class="article-list">
+  {% for post in site.posts %}
+    <li>
+      <article class="article">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          <div class="content">
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.content | strip_html | truncate: 240 }}</p>
+          </div>
+        </a>
+      </article>
+    </li>
+  {% endfor %}
+</ul>

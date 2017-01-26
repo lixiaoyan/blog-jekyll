@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 html {
+  overflow-x: hidden;
   overflow-y: scroll;
-  font-family: "Ropa Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+  font-family: "Ropa Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -20,38 +21,35 @@ body {
           font-variant-ligatures: common-ligatures;
   -webkit-font-kerning: normal;
           font-kerning: normal;
-  background-color: #fafafa;
 }
 ::-moz-selection {
   background-color: rgba(33, 150, 243, 0.2);
-  text-shadow: none;
 }
 ::selection {
   background-color: rgba(33, 150, 243, 0.2);
-  text-shadow: none;
 }
 .clearfix::before,
 .clearfix::after,
 .header::before,
 .header::after,
+.main::before,
+.main::after,
 .content .footnotes::before,
 .content .footnotes::after,
-.meta::before,
-.meta::after {
+.article-list li::before,
+.article-list li::after {
   content: "";
   display: table;
 }
 .clearfix::after,
 .header::after,
+.main::after,
 .content .footnotes::after,
-.meta::after {
+.article-list li::after {
   clear: both;
 }
 .icon-base,
 .icon,
-.content h2::before,
-.content h3::before,
-.content pre::before,
 .content blockquote::before {
   direction: ltr;
   font-family: "Material Icons";
@@ -67,9 +65,6 @@ body {
           font-feature-settings: "liga";
 }
 .icon,
-.content h2::before,
-.content h3::before,
-.content pre::before,
 .content blockquote::before {
   display: inline-block;
   width: 1em;
@@ -86,7 +81,6 @@ body {
   }
 }
 .banner {
-  position: relative;
   margin: 0 -2rem;
   padding: 0 2rem;
   color: #fff;
@@ -97,24 +91,6 @@ body {
 }
 .banner ::selection {
   background-color: rgba(255, 255, 255, 0.2);
-}
-.banner::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 0.1;
-  background-position: 0 0, 0 64px;
-  background-size: 64px 128px;
-  background-image: -webkit-linear-gradient(315deg, transparent 21.627417px, #fff 21.627417px, #fff 23.627417px, transparent 23.627417px, transparent 66.88225099px, #fff 66.88225099px, #fff 68.88225099px, transparent 68.88225099px), -webkit-linear-gradient(225deg, transparent 21.627417px, #fff 21.627417px, #fff 23.627417px, transparent 23.627417px, transparent 66.88225099px, #fff 66.88225099px, #fff 68.88225099px, transparent 68.88225099px);
-  background-image: linear-gradient(135deg, transparent 21.627417px, #fff 21.627417px, #fff 23.627417px, transparent 23.627417px, transparent 66.88225099px, #fff 66.88225099px, #fff 68.88225099px, transparent 68.88225099px), linear-gradient(225deg, transparent 21.627417px, #fff 21.627417px, #fff 23.627417px, transparent 23.627417px, transparent 66.88225099px, #fff 66.88225099px, #fff 68.88225099px, transparent 68.88225099px);
-}
-.banner .header,
-.banner .title {
-  position: relative;
-  z-index: 1;
 }
 .header {
   max-width: 1200px;
@@ -177,69 +153,62 @@ body {
 .nav a.active::after {
   border-color: rgba(255, 255, 255, 0.8);
 }
-.title {
-  padding-top: 12rem;
-  padding-bottom: 4rem;
-  text-align: center;
-}
-@media (max-width: 640px) {
-  .title {
-    padding-top: 4rem;
-  }
-}
-.title h1 {
-  max-width: 960px;
-  margin: 0 auto;
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-@media (max-width: 800px) {
-  .title h1 {
-    font-size: 2rem;
-  }
+.main {
+  min-height: calc(100vh - 4rem - 5.25rem);
 }
 .article {
   max-width: 640px;
-  margin: 0 auto;
-  text-align: justify;
+  margin: 3rem auto;
 }
 .content {
-  margin: 4rem 0;
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", sans-serif;
+  margin: 3rem 0;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
   line-height: 1.8;
-  color: rgba(0, 0, 0, 0.65);
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.8);
 }
+.content h1,
 .content h2,
 .content h3,
 .content h4,
 .content h5,
 .content h6 {
-  position: relative;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.8);
+  color: #000;
 }
+.content h1 + h1,
+.content h2 + h1,
+.content h3 + h1,
+.content h4 + h1,
+.content h5 + h1,
+.content h6 + h1,
+.content h1 + h2,
 .content h2 + h2,
 .content h3 + h2,
 .content h4 + h2,
 .content h5 + h2,
 .content h6 + h2,
+.content h1 + h3,
 .content h2 + h3,
 .content h3 + h3,
 .content h4 + h3,
 .content h5 + h3,
 .content h6 + h3,
+.content h1 + h4,
 .content h2 + h4,
 .content h3 + h4,
 .content h4 + h4,
 .content h5 + h4,
 .content h6 + h4,
+.content h1 + h5,
 .content h2 + h5,
 .content h3 + h5,
 .content h4 + h5,
 .content h5 + h5,
 .content h6 + h5,
+.content h1 + h6,
 .content h2 + h6,
 .content h3 + h6,
 .content h4 + h6,
@@ -247,36 +216,21 @@ body {
 .content h6 + h6 {
   margin-top: 1.5rem;
 }
-.content h2::before,
-.content h3::before {
-  content: "star";
-  position: absolute;
-  right: 100%;
-  top: 45%;
-  margin-right: 1.5rem;
-  font-size: 1.5rem;
-  color: #90a4ae;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-@media (max-width: 800px) {
-  .content h2::before,
-  .content h3::before {
-    display: none;
-  }
+.content h1 {
+  font-size: 2em;
 }
 .content h2 {
-  font-size: 1.75rem;
+  font-size: 1.75em;
 }
 .content h3 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .content h4 {
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 .content h5,
 .content h6 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 .content p,
 .content ul,
@@ -293,11 +247,14 @@ body {
   list-style: square;
 }
 .content dl dt {
-  font-weight: 600;
+  font-weight: 700;
 }
 .content dl dd {
   margin-left: 0;
   margin-bottom: 1.5rem;
+}
+.content small {
+  font-size: 0.75em;
 }
 .content a {
   text-decoration: none;
@@ -309,31 +266,16 @@ body {
   text-decoration: underline;
 }
 .content code {
-  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "PingFang TC", "Hiragino Sans GB", "Microsoft YaHei", "Microsoft JhengHei", monospace;
+  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", monospace;
   font-size: 0.875em;
 }
 .content pre {
-  position: relative;
   overflow-x: auto;
   margin: 3rem 0;
   border-radius: 2px;
   line-height: 1.5;
   background-color: #eceff1;
   box-shadow: inset 12px 0 0 -10px #cfd8dc;
-}
-.content pre::before {
-  content: "code";
-  position: absolute;
-  right: 100%;
-  top: 0;
-  margin-right: 1.5rem;
-  font-size: 1.5rem;
-  color: #90a4ae;
-}
-@media (max-width: 800px) {
-  .content pre::before {
-    display: none;
-  }
 }
 .content pre code {
   float: left;
@@ -345,30 +287,22 @@ body {
 .content blockquote {
   position: relative;
   margin: 1.5rem 0;
+  padding-left: 2rem;
 }
 .content blockquote::before {
   content: "format_quote";
   position: absolute;
-  right: 100%;
+  left: 0;
   top: 0;
-  margin-right: 1.5rem;
   font-size: 1.5rem;
   color: #90a4ae;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-@media (max-width: 800px) {
-  .content blockquote {
-    margin-left: 2rem;
-  }
-  .content blockquote::before {
-    margin-right: 0.5rem;
-  }
-}
 .content sup,
 .content sub {
-  font-size: 0.75rem;
-  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.6);
 }
 .content img {
   display: block;
@@ -377,7 +311,7 @@ body {
   border-radius: 2px;
 }
 .content hr {
-  margin: 3rem -6rem;
+  margin: 3rem 0;
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -388,20 +322,24 @@ body {
   content: "]";
 }
 .content .footnotes {
-  margin: 0 -6rem;
   margin-top: 4rem;
   margin-bottom: -4rem;
-  padding: 0 6rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 0.75rem;
+  font-size: 0.75em;
+}
+.content .footnotes ol {
+  padding-left: 1.5rem;
+}
+.content .footnotes p {
+  margin: 0.5rem 0;
 }
 .meta {
-  margin: 4rem -6rem;
-  padding: 2rem 6rem;
-  font-size: 0.875em;
+  margin: 3rem 0;
+  padding: 1.5rem 0;
+  font-size: 0.875rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.6);
 }
 .meta:empty {
   padding: 0;
@@ -411,36 +349,38 @@ body {
   text-align: center;
 }
 .article-list {
-  margin: 4rem 0;
-  margin-top: 0;
+  max-width: 640px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
-  text-align: center;
-}
-.article-list li {
-  margin: 0 -6rem;
-  padding: 0 6rem;
 }
 .article-list li:not(:last-child) {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.article-list a {
+.article-list .article a {
   display: block;
-  margin: 0 -6rem;
-  padding: 1.5rem 6rem;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
+  color: inherit;
+}
+.article-list .article h1 {
+  margin: 0.5rem 0;
+}
+.article-list .article p {
+  margin: 0.5rem 0;
+  font-size: 0.875em;
+  color: rgba(0, 0, 0, 0.6);
 }
 .comments {
   max-width: 640px;
-  margin: 4rem auto;
+  margin: 3rem auto;
 }
 .footer {
-  max-width: 960px;
-  margin: 4rem auto;
+  margin: 0 -2rem;
+  padding: 1.5rem 2rem;
   font-size: 0.75rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.4);
+  background-color: #f5f5f5;
 }
 .footer p {
   margin: 0;
