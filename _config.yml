@@ -8,8 +8,8 @@ gems:
   - jekyll-sitemap
   - jekyll-mentions
 navs:
-  - name: "Links"
-    url: "/links.html"
+  - name: "Friends"
+    url: "/friends.html"
   - name: "About"
     url: "/about.html"
 defaults:
