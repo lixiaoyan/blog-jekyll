@@ -1,5 +1,5 @@
 ---
-title: "Links"
+title: "Friends"
 ---
 
 - [Artoria2e5](https://github.com/Artoria2e5) <small>(@Artoria2e5)</small>
