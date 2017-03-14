@@ -16,3 +16,4 @@ title: "Friends"
 - [谦谦](http://xqq.im/) <small>(@xqq)</small>
 - [次碳酸钴](https://www.web-tinker.com/) <small>(@YanagiEiichi)</small>
 - [Aveline](https://blog.swan.im/) <small>(@ym)</small>
+- [ClassicOldSong](https://ccoooss.com/) <small>(@ClassicOldSong)</small>
