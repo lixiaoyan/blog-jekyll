@@ -3,7 +3,7 @@ title: "Friends"
 ---
 
 - [Artoria2e5](https://github.com/Artoria2e5) <small>(@Artoria2e5)</small>
-- [Cee](http://blog.cee.moe/) <small>(@Cee)</small>
+- [Cee](http://cee.moe/) <small>(@Cee)</small>
 - [Dimpurr](http://dimpurr.com/) <small>(@dimpurr)</small>
 - [Hexchain](https://hexchain.org/) <small>(@hexchain)</small>
 - [JackYYF](https://jackyyf.com/) <small>(@jackyyf)</small>
