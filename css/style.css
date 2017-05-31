@@ -266,7 +266,7 @@ body {
   margin-left: 0;
   margin-bottom: 1.5rem;
 }
-@media (min-width: 641px) {
+@media (min-width: 640px) {
   .content dl.oneline dt {
     float: left;
     clear: left;
@@ -285,6 +285,8 @@ body {
 }
 .content a {
   text-decoration: none;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink;
   color: #ff3d00;
 }
 .content a:hover,

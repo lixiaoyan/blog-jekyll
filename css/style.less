@@ -266,7 +266,7 @@ body {
   }
 
   dl.oneline {
-    @media (min-width: (@content-width + 1px)) {
+    @media (min-width: @content-width) {
       dt {
         float: left;
         clear: left;
@@ -292,6 +292,7 @@ body {
 
   a {
     text-decoration: none;
+    text-decoration-skip: ink;
     color: #ff3d00;
 
     &:hover,
