@@ -411,19 +411,24 @@ body {
 
 .article-list {
   max-width: @content-width;
-  margin: 0 auto;
+  margin: 3rem auto;
   padding: 0;
   list-style: none;
 
-  li {
-    &:extend(.clearfix all);
-
-    &:not(:last-child) {
-      border-bottom: 1px solid fade(#000, 10%);
-    }
+  li:not(:last-child)::after {
+    content: "";
+    display: block;
+    margin: 1rem 0;
+    border-bottom: 1px solid fade(#000, 10%);
   }
 
   .article {
+    margin: 0;
+
+    .content {
+      margin: 0;
+    }
+
     a {
       display: block;
       text-decoration: none;
@@ -431,13 +436,7 @@ body {
     }
 
     h1 {
-      margin: 0.5rem 0;
-    }
-
-    p {
-      margin: 0.5rem 0;
-      font-size: 0.875em;
-      color: fade(#000, 60%);
+      margin: 0;
     }
   }
 }

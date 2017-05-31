@@ -9,10 +9,6 @@ layout: "default"
         <a href="{{ site.baseurl }}{{ post.url }}">
           <div class="content">
             <h1>{{ post.title }}</h1>
-            {% capture description %}{{ post.content | strip | strip_html | truncate: 240 }}{% endcapture %}
-            {% if description != "" %}
-              <p>{{ description }}</p>
-            {% endif %}
           </div>
         </a>
       </article>
