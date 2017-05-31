@@ -7,6 +7,7 @@ kramdown:
 gems:
   - jekyll-sitemap
   - jekyll-mentions
+  - jekyll-gist
 navs:
   - name: "Friends"
     url: "/friends.html"
