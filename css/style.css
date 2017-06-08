@@ -86,7 +86,7 @@ body {
   top: 0;
   padding: 0 2rem;
   color: #fff;
-  background-color: #2196f3;
+  background-color: #263238;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 640px) {
@@ -284,7 +284,7 @@ body {
   text-decoration: none;
   -webkit-text-decoration-skip: ink;
           text-decoration-skip: ink;
-  color: #ff3d00;
+  color: #2196f3;
 }
 .content a:hover,
 .content a:active,
