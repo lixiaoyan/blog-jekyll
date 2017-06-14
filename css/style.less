@@ -266,16 +266,28 @@ body {
   }
 
   dl.oneline {
-    @media (min-width: @content-width) {
-      dt {
-        float: left;
-        clear: left;
-        width: 8rem;
-      }
+    dt {
+      float: left;
+      clear: left;
+      width: 8rem;
+    }
 
-      dd {
-        overflow: hidden;
+    dd {
+      overflow: hidden;
+    }
+
+    &.responsive {
+      @media (max-width: @content-width) {
+        dt {
+          float: none;
+        }
       }
+    }
+  }
+
+  dl.compat {
+    dd {
+      margin-bottom: 0;
     }
   }
 

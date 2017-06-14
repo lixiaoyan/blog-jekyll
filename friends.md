@@ -2,18 +2,48 @@
 title: "Friends"
 ---
 
-- [Artoria2e5](https://github.com/Artoria2e5) <small>(@Artoria2e5)</small>
-- [Cee](http://cee.moe/) <small>(@Cee)</small>
-- [Dimpurr](http://dimpurr.com/) <small>(@dimpurr)</small>
-- [hexchain](https://hexchain.org/) <small>(@hexchain)</small>
-- [JackYYF](https://jackyyf.com/) <small>(@jackyyf)</small>
-- [三三](http://oott123.com/) <small>(@oott123)</small>
-- [pandada8](https://github.com/pandada8) <small>(@pandada8)</small>
-- [奶鱼](https://mxd.moe/) <small>(@sdjnmxd)</small>
-- [Starriv](https://starriv.com/) <small>(@starriv)</small>
-- [swordfeng](https://swordfeng.github.io/) <small>(@swordfeng)</small>
-- [Tundra](https://railgun.im/) <small>(@TundraWork)</small>
-- [谦谦](http://xqq.im/) <small>(@xqq)</small>
-- [次碳酸钴](https://www.web-tinker.com/) <small>(@YanagiEiichi)</small>
-- [Aveline](https://blog.swan.im/) <small>(@ym)</small>
-- [ClassicOldSong](https://ccoooss.com/) <small>(@ClassicOldSong)</small>
+@Artoria2e5
+: [Artoria2e5](https://github.com/Artoria2e5)
+
+@Cee
+: [Cee](http://cee.moe/)
+
+@dimpurr
+: [Dimpurr](http://dimpurr.com/)
+
+@hexchain
+: [hexchain](https://hexchain.org/)
+
+@jackyyf
+: [JackYYF](https://jackyyf.com/)
+
+@oott123
+: [三三](http://oott123.com/)
+
+@pandada8
+: [pandada8](https://github.com/pandada8)
+
+@sdjnmxd
+: [奶鱼](https://mxd.moe/)
+
+@starriv
+: [Starriv](https://starriv.com/)
+
+@swordfeng
+: [swordfeng](https://swordfeng.github.io/)
+
+@TundraWork
+: [Tundra](https://railgun.im/)
+
+@xqq
+: [谦谦](http://xqq.im/)
+
+@YanagiEiichi
+: [次碳酸钴](https://www.web-tinker.com/)
+
+@ym
+: [Aveline](https://blog.swan.im/)
+
+@ClassicOldSong
+: [ClassicOldSong](https://ccoooss.com/)
+{: .oneline .compat .small-title}

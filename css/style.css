@@ -263,15 +263,21 @@ body {
   margin-left: 0;
   margin-bottom: 1.5rem;
 }
-@media (min-width: 640px) {
-  .content dl.oneline dt {
-    float: left;
-    clear: left;
-    width: 8rem;
+.content dl.oneline dt {
+  float: left;
+  clear: left;
+  width: 8rem;
+}
+.content dl.oneline dd {
+  overflow: hidden;
+}
+@media (max-width: 640px) {
+  .content dl.oneline.responsive dt {
+    float: none;
   }
-  .content dl.oneline dd {
-    overflow: hidden;
-  }
+}
+.content dl.compat dd {
+  margin-bottom: 0;
 }
 .content dl.small-title dt {
   font-size: 0.75em;
