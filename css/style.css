@@ -288,14 +288,16 @@ body {
 }
 .content a {
   text-decoration: none;
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip: ink;
   color: #2196f3;
 }
 .content a:hover,
 .content a:active,
 .content a:focus {
-  text-decoration: underline;
+  background-image: -webkit-linear-gradient(top, currentColor, currentColor);
+  background-image: linear-gradient(to bottom, currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 1.1em;
+  background-size: 100% 1px;
 }
 .content code {
   font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", monospace;

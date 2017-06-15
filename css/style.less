@@ -304,13 +304,15 @@ body {
 
   a {
     text-decoration: none;
-    text-decoration-skip: ink;
     color: #2196f3;
 
     &:hover,
     &:active,
     &:focus {
-      text-decoration: underline;
+      background-image: linear-gradient(to bottom, currentColor, currentColor);
+      background-repeat: no-repeat;
+      background-position: 0 1.1em;
+      background-size: 100% 1px;
     }
   }
 
