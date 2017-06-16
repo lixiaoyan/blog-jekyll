@@ -8,6 +8,9 @@ title: "Friends"
 @Cee
 : [Cee](http://cee.moe/)
 
+@ClassicOldSong
+: [ClassicOldSong](https://ccoooss.com/)
+
 @dimpurr
 : [Dimpurr](http://dimpurr.com/)
 
@@ -43,7 +46,4 @@ title: "Friends"
 
 @ym
 : [Aveline](https://blog.swan.im/)
-
-@ClassicOldSong
-: [ClassicOldSong](https://ccoooss.com/)
 {: .oneline .compat .small-title}
