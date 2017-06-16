@@ -20,6 +20,9 @@ title: "Friends"
 @jackyyf
 : [JackYYF](https://jackyyf.com/)
 
+@kookxiang
+: [kookxiang](https://ikk.me/)
+
 @oott123
 : [三三](http://oott123.com/)
 
@@ -46,4 +49,7 @@ title: "Friends"
 
 @ym
 : [Aveline](https://blog.swan.im/)
+
+@zsxsoft
+: [zsx](https://www.zsxsoft.com/)
 {: .oneline .compat .small-title}
