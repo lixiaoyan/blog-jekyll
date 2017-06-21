@@ -1,4 +1,4 @@
 new Headroom(document.querySelector(".banner"), {
-  offset: 64,
-  tolerance: { up: 32, down: 16 },
+  offset: 200,
+  tolerance: { up: 20, down: 10 },
 }).init();
