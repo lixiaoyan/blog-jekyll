@@ -88,6 +88,12 @@ body {
   color: #fff;
   background-color: #263238;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
 }
 @media (max-width: 640px) {
   .banner {
@@ -99,6 +105,10 @@ body {
 }
 .banner ::selection {
   background-color: rgba(255, 255, 255, 0.2);
+}
+.banner.headroom--unpinned {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 .header {
   max-width: 1200px;
