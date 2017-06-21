@@ -32,6 +32,9 @@ title: "Friends"
 @sdjnmxd
 : [奶鱼](https://mxd.moe/)
 
+@septs
+: [Septs](https://septs.pw/)
+
 @starriv
 : [Starriv](https://starriv.com/)
 
