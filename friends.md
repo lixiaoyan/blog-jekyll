@@ -23,6 +23,9 @@ title: "Friends"
 @kookxiang
 : [kookxiang](https://ikk.me/)
 
+@minamion
+: [南音](https://www.minamion.com/)
+
 @oott123
 : [三三](http://oott123.com/)
 
