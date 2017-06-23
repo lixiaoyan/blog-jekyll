@@ -11,9 +11,6 @@ Google+
 Twitter
 : <https://twitter.com/lxy_lixiaoyan>
 
-Telegram
-: <https://t.me/intptr>
-
 Keybase
 : <https://keybase.io/intptr>
 
