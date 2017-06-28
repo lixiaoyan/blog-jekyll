@@ -1,5 +1,5 @@
 url: "https://www.intptr.im/blog"
-baseurl: "/blog"
+baseurl: ""
 timezone: "Asia/Shanghai"
 permalink: "/post/:title.html"
 kramdown:
