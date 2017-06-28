@@ -1,4 +1,4 @@
-url: "https://www.intptr.im/blog"
+url: "http://blog.ptr.moe"
 baseurl: ""
 timezone: "Asia/Shanghai"
 permalink: "/post/:title.html"
