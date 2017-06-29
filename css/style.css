@@ -311,16 +311,24 @@ body {
   background-size: 100% 1px;
 }
 .content code {
+  padding: 0.25em 0.5em;
   font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", monospace;
   font-size: 0.875em;
+  color: #263238;
+  background-color: #eceff1;
 }
 .content pre {
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: auto;
+  max-height: 18rem;
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
   line-height: 1.5;
   background-color: #eceff1;
+}
+.content pre code {
+  display: block;
+  padding: 0;
+  background-color: transparent;
 }
 .content pre a {
   color: inherit;
@@ -349,6 +357,21 @@ body {
   display: block;
   max-width: 100%;
   margin: 1.5rem auto;
+}
+.content table {
+  width: 100%;
+  margin: 1.5rem auto;
+  border-spacing: 0;
+}
+.content table th,
+.content table td {
+  padding: 0.25rem 0.5rem;
+}
+.content table th {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+.content table td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .content iframe {
   display: block;

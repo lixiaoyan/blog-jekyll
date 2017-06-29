@@ -324,17 +324,26 @@ body {
   }
 
   code {
+    padding: 0.25em 0.5em;
     font-family: "Source Code Pro", @mono-fonts;
     font-size: 0.875em;
+    color: #263238;
+    background-color: #eceff1;
   }
 
   pre {
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: auto;
+    max-height: 18rem;
     margin: 1.5rem 0;
     padding: 1rem 1.5rem;
     line-height: 1.5;
     background-color: #eceff1;
+
+    code {
+      display: block;
+      padding: 0;
+      background-color: transparent;
+    }
 
     a {
       color: inherit;
@@ -369,6 +378,24 @@ body {
     display: block;
     max-width: 100%;
     margin: 1.5rem auto;
+  }
+
+  table {
+    width: 100%;
+    margin: 1.5rem auto;
+    border-spacing: 0;
+
+    th, td {
+      padding: 0.25rem 0.5rem;
+    }
+
+    th {
+      border-bottom: 2px solid fade(#000, 10%);
+    }
+
+    td {
+      border-bottom: 1px solid fade(#000, 10%);
+    }
   }
 
   iframe {
