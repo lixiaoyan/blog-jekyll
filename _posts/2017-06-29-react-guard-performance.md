@@ -1,5 +1,5 @@
 ---
-title: "React Guard 性能测试"
+title: "React Guard 服务器渲染性能测试"
 ---
 
 使用知乎新版前端项目在 `NODE_ENV=development` 环境下测试得到的数据。  
