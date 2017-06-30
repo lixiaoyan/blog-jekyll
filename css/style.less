@@ -202,6 +202,13 @@ body {
   text-align: justify;
   color: fade(#000, 80%);
 
+  .meta {
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+    font-size: 0.75em;
+    color: fade(#000, 60%);
+  }
+
   h1,
   h2,
   h3,
@@ -438,24 +445,6 @@ body {
   }
 }
 
-.meta {
-  margin: 3rem 0;
-  padding: 1.5rem 0;
-  font-size: 0.875rem;
-  border-top: 1px solid fade(#000, 10%);
-  border-bottom: 1px solid fade(#000, 10%);
-  color: fade(#000, 60%);
-
-  &:empty {
-    padding: 0;
-    border-bottom: none;
-  }
-
-  .time {
-    text-align: center;
-  }
-}
-
 .article-list {
   max-width: @content-width;
   margin: 3rem auto;
@@ -486,6 +475,12 @@ body {
       margin: 0;
     }
   }
+}
+
+.divider {
+  max-width: @content-width;
+  margin: 3rem auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .comments {

@@ -188,6 +188,12 @@ body {
   text-align: justify;
   color: rgba(0, 0, 0, 0.8);
 }
+.content .meta {
+  margin-top: -3rem;
+  margin-bottom: 3rem;
+  font-size: 0.75em;
+  color: rgba(0, 0, 0, 0.6);
+}
 .content h1,
 .content h2,
 .content h3,
@@ -401,21 +407,6 @@ body {
 .content .footnotes p {
   margin: 0.5rem 0;
 }
-.meta {
-  margin: 3rem 0;
-  padding: 1.5rem 0;
-  font-size: 0.875rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  color: rgba(0, 0, 0, 0.6);
-}
-.meta:empty {
-  padding: 0;
-  border-bottom: none;
-}
-.meta .time {
-  text-align: center;
-}
 .article-list {
   max-width: 640px;
   margin: 3rem auto;
@@ -441,6 +432,11 @@ body {
 }
 .article-list .article h1 {
   margin: 0;
+}
+.divider {
+  max-width: 640px;
+  margin: 3rem auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .comments {
   max-width: 640px;
