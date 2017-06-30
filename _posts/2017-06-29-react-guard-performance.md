@@ -5,6 +5,13 @@ title: "React Guard 性能测试"
 使用知乎新版前端项目在 `NODE_ENV=development` 环境下测试得到的数据。  
 使用了自己 fork 的 [react-guard](https://github.com/lixiaoyan/react-guard)。（修复了 stateless components 的相关问题）
 
+Node.js
+: 8.0.0
+
+React
+: 15.5.4
+{: .oneline .compat}
+
 | Case (ms / request) | Time (avg) | Time (min) | Time (max) |
 | ------------------- | ---------: | ---------: | ---------: |
 | React               | 90.39      | 62.65      | 123.37     |
