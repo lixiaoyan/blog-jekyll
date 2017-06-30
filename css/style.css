@@ -189,8 +189,7 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 .content .meta {
-  margin-top: -3rem;
-  margin-bottom: 3rem;
+  margin: 3rem 0;
   font-size: 0.75em;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -203,6 +202,7 @@ body {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-weight: 400;
+  line-height: 1.5;
   color: #000;
 }
 .content h1 + h1,
@@ -246,6 +246,9 @@ body {
 .content h1 {
   margin-bottom: 3rem;
   font-size: 2em;
+}
+.content h1 + .meta {
+  margin-top: -2.5rem;
 }
 .content h2 {
   font-size: 1.75em;

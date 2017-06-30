@@ -203,8 +203,7 @@ body {
   color: fade(#000, 80%);
 
   .meta {
-    margin-top: -3rem;
-    margin-bottom: 3rem;
+    margin: 3rem 0;
     font-size: 0.75em;
     color: fade(#000, 60%);
   }
@@ -218,6 +217,7 @@ body {
     margin-top: 3rem;
     margin-bottom: 1.5rem;
     font-weight: 400;
+    line-height: 1.5;
     color: #000;
 
     & + h1,
@@ -233,6 +233,10 @@ body {
   h1 {
     margin-bottom: 3rem;
     font-size: 2em;
+
+    & + .meta {
+      margin-top: -2.5rem;
+    }
   }
 
   h2 {
