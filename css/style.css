@@ -238,6 +238,7 @@ body {
   margin-top: 1.5rem;
 }
 .content h1 {
+  margin-bottom: 3rem;
   font-size: 2em;
 }
 .content h2 {
@@ -319,7 +320,7 @@ body {
 }
 .content pre {
   overflow: auto;
-  max-height: 18rem;
+  max-height: 20rem;
   margin: 1.5rem 0;
   padding: 1rem 1.5rem;
   line-height: 1.5;
