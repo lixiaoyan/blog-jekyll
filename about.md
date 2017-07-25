@@ -2,6 +2,8 @@
 title: "About"
 ---
 
+![IntPtr](https://ptr.moe/avatar.svg)
+
 GitHub
 : <https://github.com/lixiaoyan>
 
