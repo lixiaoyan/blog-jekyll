@@ -20,6 +20,9 @@ title: "Friends"
 @jackyyf
 : [JackYYF](https://jackyyf.com/)
 
+@KexyBiscuit
+: [Kexy Biscuit](https://github.com/KexyBiscuit)
+
 @kookxiang
 : [kookxiang](https://ikk.me/)
 
