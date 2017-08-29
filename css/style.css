@@ -277,7 +277,7 @@ body {
   list-style: square;
 }
 .content dl dt {
-  font-weight: 700;
+  font-weight: 600;
 }
 .content dl dd {
   margin-left: 0;
@@ -302,6 +302,10 @@ body {
 .content dl.small-title dt {
   font-size: 0.75em;
   line-height: 2.4;
+}
+.content b,
+.content strong {
+  font-weight: 600;
 }
 .content small {
   font-size: 0.75em;
