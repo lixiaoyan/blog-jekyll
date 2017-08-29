@@ -124,6 +124,7 @@ render: 91.757ms
 render: 87.258ms
 render: 102.963ms
 ```
+{:.collapse}
 
 #### React + React Guard
 
@@ -229,3 +230,4 @@ render: 82.054ms
 render: 119.334ms
 render: 90.885ms
 ```
+{:.collapse}

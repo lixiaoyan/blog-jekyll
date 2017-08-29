@@ -198,8 +198,7 @@ body {
 .content {
   margin: 3rem 0;
   font-family: "Source Sans Pro", @sans-fonts;
-  line-height: 1.8;
-  text-align: justify;
+  line-height: 2;
   color: fade(#000, 80%);
 
   .meta {
@@ -336,25 +335,94 @@ body {
   }
 
   code {
-    padding: 0.25em 0.5em;
+    display: inline-block;
+    padding: 0 0.5em;
     font-family: "Source Code Pro", @mono-fonts;
-    font-size: 0.875em;
+    font-size: 0.8125em;
     color: #263238;
-    background-color: #eceff1;
+    background-color: fade(#eceff1, 50%);
   }
 
   pre {
+    position: relative;
     overflow: auto;
-    max-height: 20rem;
     margin: 1.5rem 0;
-    padding: 1rem 1.5rem;
-    line-height: 1.5;
-    background-color: #eceff1;
+    line-height: 1.75;
+    background-color: fade(#eceff1, 50%);
+
+    &.collapse {
+      max-height: 20rem;
+    }
 
     code {
-      display: block;
       padding: 0;
       background-color: transparent;
+    }
+
+    > code {
+      display: inline-block;
+      min-width: 100%;
+      padding: 0.5rem 1.5rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3rem;
+        height: 100%;
+        border-right: 2px solid #eceff1;
+      }
+    }
+
+    .code {
+      position: relative;
+      font-size: inherit;
+      counter-reset: code-line;
+    }
+
+    .code-line {
+      position: relative;
+      margin: 0 -1.5rem;
+      padding: 0 1.5rem;
+      padding-left: 4rem;
+      counter-increment: code-line;
+
+      &::before {
+        content: counter(code-line);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3rem;
+        height: 100%;
+        padding: 0 0.5rem;
+        border-right: 2px solid transparent;
+        font-size: 0.75em;
+        text-align: right;
+        color: fade(#263238, 40%);
+      }
+
+      code {
+        display: block;
+      }
+    }
+
+    .code-diff {
+      &-add {
+        background-color: fade(#c8e6c9, 50%);
+
+        &::before {
+          border-color: #c8e6c9;
+        }
+      }
+
+      &-delete {
+        background-color: fade(#ffcdd2, 50%);
+
+        &::before {
+          border-color: #ffcdd2;
+        }
+      }
     }
 
     a {
@@ -434,8 +502,8 @@ body {
   .footnotes {
     &:extend(.clearfix all);
 
-    margin-top: 4rem;
-    margin-bottom: -4rem;
+    margin-top: 3rem;
+    margin-bottom: -3rem;
     border-top: 1px solid fade(#000, 10%);
     font-size: 0.75em;
 

@@ -184,8 +184,7 @@ body {
 .content {
   margin: 3rem 0;
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-  line-height: 1.8;
-  text-align: justify;
+  line-height: 2;
   color: rgba(0, 0, 0, 0.8);
 }
 .content .meta {
@@ -321,24 +320,80 @@ body {
   background-size: 100% 1px;
 }
 .content code {
-  padding: 0.25em 0.5em;
+  display: inline-block;
+  padding: 0 0.5em;
   font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", monospace;
-  font-size: 0.875em;
+  font-size: 0.8125em;
   color: #263238;
-  background-color: #eceff1;
+  background-color: rgba(236, 239, 241, 0.5);
 }
 .content pre {
+  position: relative;
   overflow: auto;
-  max-height: 20rem;
   margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  line-height: 1.5;
-  background-color: #eceff1;
+  line-height: 1.75;
+  background-color: rgba(236, 239, 241, 0.5);
+}
+.content pre.collapse {
+  max-height: 20rem;
 }
 .content pre code {
-  display: block;
   padding: 0;
   background-color: transparent;
+}
+.content pre > code {
+  display: inline-block;
+  min-width: 100%;
+  padding: 0.5rem 1.5rem;
+}
+.content pre > code::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3rem;
+  height: 100%;
+  border-right: 2px solid #eceff1;
+}
+.content pre .code {
+  position: relative;
+  font-size: inherit;
+  counter-reset: code-line;
+}
+.content pre .code-line {
+  position: relative;
+  margin: 0 -1.5rem;
+  padding: 0 1.5rem;
+  padding-left: 4rem;
+  counter-increment: code-line;
+}
+.content pre .code-line::before {
+  content: counter(code-line);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3rem;
+  height: 100%;
+  padding: 0 0.5rem;
+  border-right: 2px solid transparent;
+  font-size: 0.75em;
+  text-align: right;
+  color: rgba(38, 50, 56, 0.4);
+}
+.content pre .code-line code {
+  display: block;
+}
+.content pre .code-diff-add {
+  background-color: rgba(200, 230, 201, 0.5);
+}
+.content pre .code-diff-add::before {
+  border-color: #c8e6c9;
+}
+.content pre .code-diff-delete {
+  background-color: rgba(255, 205, 210, 0.5);
+}
+.content pre .code-diff-delete::before {
+  border-color: #ffcdd2;
 }
 .content pre a {
   color: inherit;
@@ -399,8 +454,8 @@ body {
   content: "]";
 }
 .content .footnotes {
-  margin-top: 4rem;
-  margin-bottom: -4rem;
+  margin-top: 3rem;
+  margin-bottom: -3rem;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: 0.75em;
 }
