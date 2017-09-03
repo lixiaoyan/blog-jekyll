@@ -59,6 +59,9 @@ title: "Friends"
 @ym
 : [Aveline](https://blog.swan.im/)
 
+@zfox49
+: [神秀](https://49.gs/)
+
 @zsxsoft
 : [zsx](https://www.zsxsoft.com/)
 {: .oneline .compat .small-title}
