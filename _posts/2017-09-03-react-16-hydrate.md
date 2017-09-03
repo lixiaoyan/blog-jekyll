@@ -2,8 +2,6 @@
 title: "React 16: ReactDOM.hydrate(...)"
 ---
 
-> 于是这是系列第二篇。
-
 > hydrate `[ˈhaɪdɹeɪt]`
   : *v.* 〔化〕进行水合反应；(使)成水合物；(使)水合
 
