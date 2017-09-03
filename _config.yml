@@ -4,6 +4,7 @@ timezone: "Asia/Shanghai"
 permalink: "/post/:title.html"
 kramdown:
   input: GFM
+  syntax_highlighter: null
 gems:
   - jekyll-sitemap
   - jekyll-mentions

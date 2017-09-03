@@ -3,6 +3,8 @@ new Headroom(document.querySelector(".banner"), {
   tolerance: { up: 20, down: 10 },
 }).init();
 
+Prism.highlightAll();
+
 Array.from(document.querySelectorAll("pre > code")).forEach(code => {
   const pre = code.closest("pre");
   code.classList.add("code");

@@ -343,6 +343,7 @@ body {
     padding: 0 0.5em;
     font-family: "Source Code Pro", @mono-fonts;
     font-size: 0.8125em;
+    font-weight: 400;
     color: #263238;
     background-color: fade(#eceff1, 50%);
   }
@@ -377,6 +378,12 @@ body {
       display: inline-block;
       min-width: 100%;
       padding: 0.5rem 1.5rem;
+    }
+
+    .code {
+      position: relative;
+      font-size: inherit;
+      counter-reset: code-line;
 
       &::before {
         content: "";
@@ -387,12 +394,6 @@ body {
         height: 100%;
         border-right: 2px solid #eceff1;
       }
-    }
-
-    .code {
-      position: relative;
-      font-size: inherit;
-      counter-reset: code-line;
     }
 
     .code-line {
