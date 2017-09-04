@@ -303,7 +303,7 @@ body {
 .content code {
   display: inline-block;
   padding: 0 0.5em;
-  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", monospace;
+  font-family: "Iosevka", "Source Code Pro", "Menlo", "Monaco", "Consolas", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", monospace;
   font-size: 0.8125em;
   font-weight: 400;
   color: #263238;
