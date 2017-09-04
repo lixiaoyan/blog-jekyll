@@ -44,29 +44,6 @@ body {
   }
 }
 
-.icon-base {
-  direction: ltr;
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: normal;
-  white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  font-feature-settings: "liga";
-}
-
-.icon {
-  &:extend(.icon-base);
-
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1;
-}
-
 .page {
   position: relative;
   overflow: hidden;
@@ -441,14 +418,16 @@ body {
     padding-left: 2rem;
 
     &::before {
-      &:extend(.icon);
-
-      content: "format_quote";
+      content: "";
       position: absolute;
       left: 0;
       top: 0;
-      font-size: 1.5rem;
-      color: #90a4ae;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#90a4ae"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
       transform: rotate(180deg);
     }
   }
@@ -491,7 +470,7 @@ body {
   hr {
     margin: 3rem 0;
     border: 0;
-    border-bottom: 1px solid fade(#000, 10%);
+    border-bottom: 1px solid fade(#000, 5%);
   }
 
   .footnote {
@@ -509,7 +488,7 @@ body {
 
     margin-top: 3rem;
     margin-bottom: -3rem;
-    border-top: 1px solid fade(#000, 10%);
+    border-top: 1px solid fade(#000, 5%);
     font-size: 0.75em;
 
     ol {
@@ -532,7 +511,7 @@ body {
     content: "";
     display: block;
     margin: 1.5rem 0;
-    border-bottom: 1px solid fade(#000, 10%);
+    border-bottom: 1px solid fade(#000, 5%);
   }
 
   .article {
@@ -550,6 +529,7 @@ body {
 
     h1 {
       margin: 0;
+      font-size: 1.5rem;
     }
   }
 }
@@ -557,7 +537,7 @@ body {
 .divider {
   max-width: @content-width;
   margin: 3rem auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid fade(#000, 5%);
 }
 
 .comments {

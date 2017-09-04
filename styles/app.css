@@ -45,29 +45,6 @@ body {
 .content .footnotes::after {
   clear: both;
 }
-.icon-base,
-.icon,
-.content blockquote::before {
-  direction: ltr;
-  font-family: "Material Icons";
-  font-weight: normal;
-  font-style: normal;
-  text-transform: none;
-  letter-spacing: normal;
-  white-space: nowrap;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-feature-settings: "liga";
-          font-feature-settings: "liga";
-}
-.icon,
-.content blockquote::before {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1;
-}
 .page {
   position: relative;
   overflow: hidden;
@@ -409,12 +386,16 @@ body {
   padding-left: 2rem;
 }
 .content blockquote::before {
-  content: "format_quote";
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
-  font-size: 1.5rem;
-  color: #90a4ae;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#90a4ae"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -450,7 +431,7 @@ body {
 .content hr {
   margin: 3rem 0;
   border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .content .footnote::before {
   content: "[";
@@ -461,7 +442,7 @@ body {
 .content .footnotes {
   margin-top: 3rem;
   margin-bottom: -3rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 0.75em;
 }
 .content .footnotes ol {
@@ -480,7 +461,7 @@ body {
   content: "";
   display: block;
   margin: 1.5rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .article-list .article {
   margin: 0;
@@ -495,11 +476,12 @@ body {
 }
 .article-list .article h1 {
   margin: 0;
+  font-size: 1.5rem;
 }
 .divider {
   max-width: 640px;
   margin: 3rem auto;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .comments {
   max-width: 640px;
