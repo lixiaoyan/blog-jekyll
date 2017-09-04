@@ -175,13 +175,13 @@ body {
 .content {
   margin: 3rem 0;
   font-family: "Source Sans Pro", @sans-fonts;
-  line-height: 2;
+  line-height: 1.75;
   color: fade(#000, 80%);
 
   .meta {
     margin: 3rem 0;
     font-size: 0.75em;
-    color: fade(#000, 60%);
+    color: fade(#000, 40%);
   }
 
   h1,
@@ -496,7 +496,7 @@ body {
     }
 
     p {
-      margin: 0.5rem 0;
+      margin: 0.25rem 0;
     }
   }
 }
@@ -530,6 +530,19 @@ body {
     h1 {
       margin: 0;
       font-size: 1.5rem;
+    }
+
+    .description {
+      overflow: hidden;
+      margin: 0;
+      font-size: 0.8125rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: fade(#000, 40%);
+
+      &:empty::before {
+        content: ".";
+      }
     }
   }
 }

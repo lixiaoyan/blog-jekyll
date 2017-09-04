@@ -9,6 +9,7 @@ layout: "default"
         <a href="{{ site.baseurl }}{{ post.url }}">
           <div class="content">
             <h1>{{ post.title }}</h1>
+            <p class="description">{{ post.excerpt | strip_html | strip }}</p>
           </div>
         </a>
       </article>
