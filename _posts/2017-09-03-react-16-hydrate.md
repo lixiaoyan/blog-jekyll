@@ -1,5 +1,5 @@
 ---
-title: "React 16: ReactDOM.hydrate(...)"
+title: "React 16: hydrate"
 ---
 
 > hydrate `[ˈhaɪdɹeɪt]`
