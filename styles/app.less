@@ -22,12 +22,6 @@ html {
   }
 }
 
-body {
-  word-wrap: break-word;
-  font-variant-ligatures: common-ligatures;
-  font-kerning: normal;
-}
-
 ::selection {
   background-color: fade(#2196f3, 20%);
 }
@@ -175,7 +169,12 @@ body {
 .content {
   margin: 3rem 0;
   font-family: "Source Sans Pro", @sans-fonts;
+  font-kerning: normal;
+  font-variant-ligatures: common-ligatures;
   line-height: 1.8;
+  word-wrap: break-word;
+  hyphens: auto;
+  hanging-punctuation: allow-end;
   color: fade(#000, 80%);
 
   .meta {
