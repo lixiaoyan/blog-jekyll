@@ -49,7 +49,7 @@ class Portal extends React.Component {
 
 上面这个实现在 React 16 下会碰到坑：在 `componentDidUpdate` 内无法拿到 portal 内组件的 `ref`。[^1]
 
-在 React 16 中，`ReactDOM` 上新增加了一个方法 `unstable_createPortal(...)`，可以使用这个方法代替 `unstable_renderSubtreeIntoContainer(...)` 来渲染 portal。
+在 React 16 中，`ReactDOM` 上新增加了一个方法 `createPortal(...)`，可以使用这个方法代替 `unstable_renderSubtreeIntoContainer(...)` 来渲染 portal。
 
 ``` javascript
 class Portal extends React.Component {
@@ -86,7 +86,7 @@ class Portal extends React.Component {
 
   render() {
     return null;
-    return ReactDOM.unstable_createPortal(
+    return ReactDOM.createPortal(
       this.props.children,
       this.getTarget(),
     );
@@ -123,7 +123,7 @@ class Portal extends React.Component {
     if (!this.state.mounted) {
       return null;
     }
-    return ReactDOM.unstable_createPortal(
+    return ReactDOM.createPortal(
       this.props.children,
       this.getTarget(),
     );
