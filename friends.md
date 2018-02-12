@@ -38,6 +38,9 @@ title: "Friends"
 @pandada8
 : [pandada8](https://github.com/pandada8)
 
+@qwe7002
+: [qwe7002](https://qwe7002.com/)
+
 @sdjnmxd
 : [奶鱼](https://mxd.moe/)
 
